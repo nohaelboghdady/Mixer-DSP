@@ -550,10 +550,13 @@ class Image(Ui_MainWindow):
         self.fixedScene.addItem(self.pixmapItem)
         
         #show which component?
+        self.ComponentsScene.addItem(self.imagItem)
+        self.ComponentsScene.addItem(self.realItem)
+        self.ComponentsScene.addItem(self.phaseItem)
         self.ComponentsScene.addItem(self.magnitudeItem)
-        # self.ComponentsScene.addItem(self.phaseItem)
-        # self.ComponentsScene.addItem(self.realItem)
-        # self.ComponentsScene.addItem(self.imagItem)
+        
+        
+        
         
         #set the graphics scene to our graphics view
         self.fixedDisplay.setScene(self.fixedScene)
@@ -609,8 +612,10 @@ class Image(Ui_MainWindow):
     def changeComponent(self,choice):
 
         currentComponent = self.components[choice]
+        # currentComponent = self.ComponentsScene.items()[choice]
         print(choice)
         
+        self.ComponentsScene.removeItem(currentComponent)
         self.ComponentsScene.addItem(currentComponent)
 
         #set the graphics scene to our graphics view
