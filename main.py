@@ -341,18 +341,30 @@ class Ui_MainWindow(object):
         #dropdowns
         self.InputDropdown = [self.Image1_components,self.Image2_components]
         
+        self.outputComponents = [None,None]
         
         self.inputImages = [None,None]
+        self.outputImages = [None,None]
         
         self.firstInputImage = 0;
         self.secondInputImage = 1;
         
+        self.comp1_img1 = None
+        self.comp1_img2 = None
+        self.comp2_img1 = None
+        self.comp2_img2= None
+
         self.Image1Button.clicked.connect(lambda: self.createInstance(self.firstInputImage))
         self.Image2Button.clicked.connect(lambda: self.createInstance(self.secondInputImage))
     
         self.Image1_components.activated.connect(lambda: self.changeComponent(self.firstInputImage, self.Image1_components.currentIndex()))
         self.Image2_components.activated.connect(lambda: self.changeComponent(self.secondInputImage, self.Image2_components.currentIndex()))
     
+        # self.MixerOutput.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
+        # self.Component1.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
+        # self.Component2.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
+        self.component1_components.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
+        self.component2_components.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
     
     def createInstance(self,index):
         
@@ -364,16 +376,76 @@ class Ui_MainWindow(object):
         
         
         currentImage = Image()
-        isLoaded = currentImage.loadImage(index,self.output2_Display .size(),fixedScene,fixedDisplay,ComponentsScene,ComponentsDisplay)
+        isLoaded = currentImage.loadImage(index,self.output2_Display.size(),fixedScene,fixedDisplay,ComponentsScene,ComponentsDisplay)
 
         print(isLoaded)
         if isLoaded:
             self.inputImages[index] = currentImage
 
+
     def changeComponent(self,imageIndex,choice):
         currentImage = self.inputImages[imageIndex]
         currentImage.changeComponent(choice)
+    
+    
+    def chooseOuput(self,displayIndex): 
         
+        #initialize slider value to zero
+        
+        
+        #get targeted output display & scene
+        currentDisplay = self.outputDisplays[displayIndex]
+        currentScene = self.outputScenes[displayIndex]
+        print(currentDisplay)
+
+    
+        #assign 1st image to chosen output display 
+        self.outputImages[self.firstInputImage] = self.inputImages[self.Component1.currentIndex()]
+        print(self.Component1.currentIndex())
+        
+        #assign 2nd image to chosen output display 
+        self.outputImages[self.secondInputImage] = self.inputImages[self.Component2.currentIndex()]
+        print(self.Component2.currentIndex())
+        
+ 
+        # get chosen images' instances for output manipulation
+        image1 = self.outputImages[self.firstInputImage]
+        image2 = self.outputImages[self.secondInputImage]
+        
+        #which component for each image
+        firstImageChoice = self.component1_components.currentIndex()
+        secondImageChoice = self.component2_components.currentIndex()
+        
+        print(firstImageChoice,"             ",secondImageChoice)
+        
+        
+        #transfer to class for image manipulation
+        self.comp1_img1 = image1.updateOutputScene(currentDisplay,currentScene,firstImageChoice)
+        self.comp1_img2 = image2.updateOutputScene(currentDisplay,currentScene,firstImageChoice)
+        
+        #for 2nd combobox
+        self.comp2_img1 = image1.updateOutputScene(currentDisplay,currentScene,secondImageChoice)
+        self.comp2_img2 = image2.updateOutputScene(currentDisplay,currentScene,secondImageChoice)
+        
+        #test
+        if self.comp2_img1.all() == image1.matrixComponents[firstImageChoice].all():
+            print("aywaaaa l magnitudee bta3 iamge 1 sah")
+        
+        
+        self.updateSliderValue()
+        
+        
+
+
+    def updateSliderValue(self):
+        image = Image()
+        
+        newComp1 = image.sliderEffect(self.comp1_img1, self.comp1_img2,0)
+        newComp2 = image.sliderEffect(self.comp2_img1, self.comp2_img2,0)
+        
+        newComponent = newComp1 + newComp2
+        self.outputImages[self.firstInputImage].redraw(newComponent)
+
         
 
     def retranslateUi(self, MainWindow):
@@ -424,7 +496,6 @@ class Ui_MainWindow(object):
 
 class Image(Ui_MainWindow):
     
-    # size=QSize(386,518)
     imageSizes = [None,None]
     previousImage = None
     
@@ -446,8 +517,11 @@ class Image(Ui_MainWindow):
         self.realItem = None
         self.imag_component = None
         self.imagItem = None
-        
-        self.components = [None,None,None,None]
+        self.outputDisplay = None
+        self.outputScene = None
+        self.Comp2Manipulate = None
+        self.matrixComponents = [None,None,None,None,None,None]
+        self.components = [None,None,None,None,None,None]
 
         
         #NOTE: how to update item pixmap values after any change in it
@@ -465,7 +539,7 @@ class Image(Ui_MainWindow):
         frame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         # frame = image
         
-        #for the fft
+        #for the fft & slider manipulation
         self.inputImageArray = image
         
         self.image_dimensions = size
@@ -582,17 +656,21 @@ class Image(Ui_MainWindow):
         
         #getMagnitude
         magnitude_spectrum = 20*np.log(np.abs(fshift))
+        self.matrixComponents[0] = magnitude_spectrum
         magnitude_spectrum = np.asarray(magnitude_spectrum, dtype=np.uint8)
         magnitudeFrame = cv2.cvtColor(magnitude_spectrum, cv2.COLOR_BGR2RGB)
         magnitude_image = QImage(magnitudeFrame, magnitudeFrame.shape[1],magnitudeFrame.shape[0],magnitudeFrame.strides[0],QImage.Format_RGB888) 
         self.magnitude_spectrum = QPixmap.fromImage(magnitude_image)
+        # self.matrixComponents[0] = magnitude_spectrum
         
         #getPhase
         phase_spectrum = np.angle(fshift)
+        self.matrixComponents[1] = phase_spectrum
         phase_spectrum = np.asarray(phase_spectrum, dtype=np.uint8)
         phaseFrame = cv2.cvtColor(phase_spectrum, cv2.COLOR_BGR2RGB)
         phase_image = QImage(phaseFrame, phaseFrame.shape[1],phaseFrame.shape[0],phaseFrame.strides[0],QImage.Format_RGB888)
         self.phase_spectrum = QPixmap.fromImage(phase_image)
+        # self.matrixComponents[1] = phase_spectrum
         
         #getReal
         real_component = np.real(fshift)
@@ -600,6 +678,7 @@ class Image(Ui_MainWindow):
         realFrame = cv2.cvtColor(real_component, cv2.COLOR_BGR2RGB)
         real_image = QImage(realFrame, realFrame.shape[1],realFrame.shape[0],realFrame.strides[0],QImage.Format_RGB888)
         self.real_component = QPixmap.fromImage(real_image)
+        self.matrixComponents[2] = real_component
         
         #getImaginary
         imaginary_component = np.imag(fshift)
@@ -607,7 +686,12 @@ class Image(Ui_MainWindow):
         imagFrame = cv2.cvtColor(imaginary_component, cv2.COLOR_BGR2RGB)
         imaginary_image = QImage(imagFrame, imagFrame.shape[1],imagFrame.shape[0],imagFrame.strides[0],QImage.Format_RGB888)
         self.imag_component = QPixmap.fromImage(imaginary_image)
+        self.matrixComponents[3] = imaginary_component
  
+    
+         #get uniform magnitude(all magnitude values are set to 1)
+         
+         # get uniform phase (all phase values are set to 0)
     
     def changeComponent(self,choice):
 
@@ -620,7 +704,41 @@ class Image(Ui_MainWindow):
 
         #set the graphics scene to our graphics view
         self.ComponentsDisplay.setScene(self.ComponentsScene)
+   
         
+    def updateOutputScene(self,display,scene,choice):
+        self.outputDisplay = display
+        self.outputScene = scene
+        
+        # self.Comp2Manipulate = self.components[choice]
+        self.Comp2Manipulate = self.matrixComponents[choice]
+        
+        
+        # self.redraw()
+        
+        return self.Comp2Manipulate
+    
+    
+    #manipulate the image based on its slider values then redraw it
+    def sliderEffect(self,comp1,comp2,value):
+        newComp = comp1 * value + comp2 * (100-value)
+        return newComp
+
+    def redraw(self,newComponent):
+        
+        #Fourier Inverse
+        newComponent = np.fft.ifftshift(newComponent)
+        newComponent = np.fft.ifft(newComponent)
+        
+        #test 
+        new = np.asarray(newComponent, dtype=np.uint8)
+        imagFrame = cv2.cvtColor(new, cv2.COLOR_BGR2RGB)
+        newImage = QImage(imagFrame, imagFrame.shape[1],imagFrame.shape[0],imagFrame.strides[0],QImage.Format_RGB888)
+        comp2Darw = QPixmap.fromImage(newImage)
+        comp2Darw = comp2Darw.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
+        item = QGraphicsPixmapItem(comp2Darw)
+        self.outputScene.addItem(item) 
+        self.outputDisplay.setScene(self.outputScene)
         
 
     def showMessage(self, header, message):
