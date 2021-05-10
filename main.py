@@ -339,8 +339,8 @@ class Ui_MainWindow(object):
         
         #dropdowns
         self.InputDropdown = [self.Image1_components,self.Image2_components]
-        
-        self.outputComponents = [None,None]
+
+        self.outputDropDowns = [self.component1_components,self.component2_components]
         
         self.inputImages = [None,None]
         self.outputImages = [None,None]
@@ -365,8 +365,11 @@ class Ui_MainWindow(object):
         self.component1_components.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
         self.component2_components.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
         
+        
         self.comp1_Slider.valueChanged.connect(self.updateSliderValue)
         self.comp2_Slider.valueChanged.connect(self.updateSliderValue)
+        
+        
     
     def createInstance(self,index):
         
@@ -384,6 +387,7 @@ class Ui_MainWindow(object):
         if isLoaded:
             self.inputImages[index] = currentImage
             logging.info('User opened a new Image: image%s' %index )
+            
 
 
 
@@ -395,7 +399,8 @@ class Ui_MainWindow(object):
     
     def chooseOuput(self,displayIndex): 
         
-        #initialize slider value to zero
+        #disable irrelevant components
+        self.disable()
         
         
         #get targeted output display & scene
@@ -460,6 +465,26 @@ class Ui_MainWindow(object):
         # newComponent = newComp1 + newComp2
         self.outputImages[self.firstInputImage].redraw(realTerm,ImagTerm,isReal_Imag)
 
+    def disable(self):
+        print('inside disable')
+        if (self.component1_components.currentIndex() == 0 ) :
+            for i in range(6):
+                self.component2_components.model().item(i).setEnabled(True) if (i == 1 or i == 5) else self.component2_components.model().item(i).setEnabled(False)
+        elif self.component1_components.currentIndex() == 1:
+            for i in range(6):
+                self.component2_components.model().item(i).setEnabled(True) if (i == 0 or i == 4) else self.component2_components.model().item(i).setEnabled(False)
+        elif self.component1_components.currentIndex() == 2:
+            for i in range(6):
+                self.component2_components.model().item(i).setEnabled(True) if (i == 3) else self.component2_components.model().item(i).setEnabled(False)
+        elif self.component1_components.currentIndex() == 3:
+            for i in range(6):
+                self.component2_components.model().item(i).setEnabled(True) if (i == 2) else self.component2_components.model().item(i).setEnabled(False)
+        elif self.component1_components.currentIndex() == 4:
+            for i in range(6):
+                self.component2_components.model().item(i).setEnabled(True) if (i == 1 ) else self.component2_components.model().item(i).setEnabled(False)
+        elif self.component1_components.currentIndex() == 5:
+            for i in range(6):
+                self.component2_components.model().item(i).setEnabled(True) if (i == 0 ) else self.component2_components.model().item(i).setEnabled(False)
         
 
     def retranslateUi(self, MainWindow):
