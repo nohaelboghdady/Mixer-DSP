@@ -1,0 +1,906 @@
+2021-05-10 06:46:06,504:User opened a new Image
+2021-05-10 06:55:51,928:User opened a new Image: image0
+2021-05-10 06:57:10,104:User opened a new Image: image0
+2021-05-10 06:57:12,458:User opened a new Image: image1
+2021-05-10 07:05:31,584:User opened a new Image: image0
+2021-05-10 07:05:34,091:User opened a new Image: image1
+2021-05-10 07:05:36,370:User chose outpyt Display 0
+2021-05-10 07:05:36,370:User selected image1 for component1
+2021-05-10 07:05:36,370:User selected image2 for component2
+2021-05-10 07:05:38,774:User chose outpyt Display 0
+2021-05-10 07:05:38,774:User selected image1 for component1
+2021-05-10 07:05:38,774:User selected image2 for component2
+2021-05-10 07:05:43,247:User chose outpyt Display 0
+2021-05-10 07:05:43,247:User selected image1 for component1
+2021-05-10 07:05:43,247:User selected image2 for component2
+2021-05-10 07:10:09,154:User opened a new Image: image0
+2021-05-10 07:10:17,496:User loaded different size images
+2021-05-10 07:12:05,453:User opened a new Image: image0
+2021-05-10 07:12:07,854:User opened a new Image: image1
+2021-05-10 07:21:05,639:User opened a new Image: image0
+2021-05-10 07:21:08,063:User opened a new Image: image1
+2021-05-10 07:21:09,768:User chose output Display 0
+2021-05-10 07:21:09,768:User selected image1 for component1
+2021-05-10 07:21:09,768:User selected image2 for component2
+2021-05-10 07:21:09,768:User updated slider value
+2021-05-10 07:21:12,445:User chose output Display 0
+2021-05-10 07:21:12,445:User selected image1 for component1
+2021-05-10 07:21:12,445:User selected image2 for component2
+2021-05-10 07:21:12,445:User updated slider value
+2021-05-10 07:21:15,894:User chose output Display 0
+2021-05-10 07:21:15,894:User selected image1 for component1
+2021-05-10 07:21:15,909:User selected image2 for component2
+2021-05-10 07:21:15,909:User updated slider value
+2021-05-10 07:21:18,019:User updated slider value
+2021-05-10 07:21:18,034:User updated slider value
+2021-05-10 07:21:18,050:User updated slider value
+2021-05-10 07:21:18,050:User updated slider value
+2021-05-10 07:21:18,065:User updated slider value
+2021-05-10 07:21:18,081:User updated slider value
+2021-05-10 07:21:18,081:User updated slider value
+2021-05-10 07:21:18,097:User updated slider value
+2021-05-10 07:21:18,097:User updated slider value
+2021-05-10 07:21:18,112:User updated slider value
+2021-05-10 07:21:18,112:User updated slider value
+2021-05-10 07:21:18,128:User updated slider value
+2021-05-10 07:21:18,128:User updated slider value
+2021-05-10 07:21:18,144:User updated slider value
+2021-05-10 07:21:18,144:User updated slider value
+2021-05-10 07:21:18,159:User updated slider value
+2021-05-10 07:21:18,159:User updated slider value
+2021-05-10 07:21:18,175:User updated slider value
+2021-05-10 07:21:18,175:User updated slider value
+2021-05-10 07:21:18,190:User updated slider value
+2021-05-10 07:21:18,190:User updated slider value
+2021-05-10 07:21:18,206:User updated slider value
+2021-05-10 07:21:18,222:User updated slider value
+2021-05-10 07:21:18,222:User updated slider value
+2021-05-10 07:21:18,237:User updated slider value
+2021-05-10 07:21:18,237:User updated slider value
+2021-05-10 07:21:18,253:User updated slider value
+2021-05-10 07:21:18,253:User updated slider value
+2021-05-10 07:21:18,269:User updated slider value
+2021-05-10 07:21:18,269:User updated slider value
+2021-05-10 07:21:18,284:User updated slider value
+2021-05-10 07:21:18,300:User updated slider value
+2021-05-10 07:21:18,300:User updated slider value
+2021-05-10 07:21:18,315:User updated slider value
+2021-05-10 07:21:18,315:User updated slider value
+2021-05-10 07:21:18,331:User updated slider value
+2021-05-10 07:21:18,347:User updated slider value
+2021-05-10 07:21:18,347:User updated slider value
+2021-05-10 07:21:18,362:User updated slider value
+2021-05-10 07:21:18,362:User updated slider value
+2021-05-10 07:21:18,378:User updated slider value
+2021-05-10 07:21:18,378:User updated slider value
+2021-05-10 07:21:18,393:User updated slider value
+2021-05-10 07:21:18,409:User updated slider value
+2021-05-10 07:21:18,409:User updated slider value
+2021-05-10 07:21:18,425:User updated slider value
+2021-05-10 07:21:18,425:User updated slider value
+2021-05-10 07:21:18,440:User updated slider value
+2021-05-10 07:21:18,440:User updated slider value
+2021-05-10 07:21:18,456:User updated slider value
+2021-05-10 07:21:18,472:User updated slider value
+2021-05-10 07:21:18,487:User updated slider value
+2021-05-10 07:21:18,503:User updated slider value
+2021-05-10 07:21:19,982:User updated slider value
+2021-05-10 07:21:19,998:User updated slider value
+2021-05-10 07:21:19,998:User updated slider value
+2021-05-10 07:21:20,013:User updated slider value
+2021-05-10 07:21:20,029:User updated slider value
+2021-05-10 07:21:20,029:User updated slider value
+2021-05-10 07:21:20,045:User updated slider value
+2021-05-10 07:21:20,045:User updated slider value
+2021-05-10 07:21:20,060:User updated slider value
+2021-05-10 07:21:20,076:User updated slider value
+2021-05-10 07:21:20,076:User updated slider value
+2021-05-10 07:21:20,092:User updated slider value
+2021-05-10 07:21:20,107:User updated slider value
+2021-05-10 07:21:20,107:User updated slider value
+2021-05-10 07:21:20,123:User updated slider value
+2021-05-10 07:21:20,123:User updated slider value
+2021-05-10 07:21:20,144:User updated slider value
+2021-05-10 07:21:20,144:User updated slider value
+2021-05-10 07:21:20,160:User updated slider value
+2021-05-10 07:21:20,176:User updated slider value
+2021-05-10 07:21:20,191:User updated slider value
+2021-05-10 07:21:20,191:User updated slider value
+2021-05-10 07:21:20,207:User updated slider value
+2021-05-10 07:21:20,223:User updated slider value
+2021-05-10 07:21:20,223:User updated slider value
+2021-05-10 07:21:20,238:User updated slider value
+2021-05-10 07:21:20,254:User updated slider value
+2021-05-10 07:21:20,269:User updated slider value
+2021-05-10 07:21:20,269:User updated slider value
+2021-05-10 07:21:20,285:User updated slider value
+2021-05-10 07:21:20,301:User updated slider value
+2021-05-10 07:21:20,301:User updated slider value
+2021-05-10 07:21:20,316:User updated slider value
+2021-05-10 07:21:20,332:User updated slider value
+2021-05-10 07:21:20,332:User updated slider value
+2021-05-10 07:21:20,348:User updated slider value
+2021-05-10 07:21:20,367:User updated slider value
+2021-05-10 07:21:20,382:User updated slider value
+2021-05-10 07:21:20,382:User updated slider value
+2021-05-10 07:21:20,414:User updated slider value
+2021-05-10 07:21:20,429:User updated slider value
+2021-05-10 07:21:20,429:User updated slider value
+2021-05-10 07:21:20,445:User updated slider value
+2021-05-10 07:21:20,460:User updated slider value
+2021-05-10 07:21:20,476:User updated slider value
+2021-05-10 07:21:20,476:User updated slider value
+2021-05-10 07:21:20,523:User updated slider value
+2021-05-10 07:21:31,907:User updated slider value
+2021-05-10 07:21:32,411:User updated slider value
+2021-05-10 07:21:32,427:User updated slider value
+2021-05-10 07:21:32,458:User updated slider value
+2021-05-10 07:21:32,490:User updated slider value
+2021-05-10 07:21:32,536:User updated slider value
+2021-05-10 07:21:32,552:User updated slider value
+2021-05-10 07:21:32,584:User updated slider value
+2021-05-10 07:21:32,615:User updated slider value
+2021-05-10 07:21:32,646:User updated slider value
+2021-05-10 07:21:32,677:User updated slider value
+2021-05-10 07:21:32,709:User updated slider value
+2021-05-10 07:21:32,740:User updated slider value
+2021-05-10 07:21:32,771:User updated slider value
+2021-05-10 07:21:32,802:User updated slider value
+2021-05-10 07:21:32,833:User updated slider value
+2021-05-10 07:21:32,852:User updated slider value
+2021-05-10 07:21:32,883:User updated slider value
+2021-05-10 07:21:32,914:User updated slider value
+2021-05-10 07:21:32,946:User updated slider value
+2021-05-10 07:21:32,977:User updated slider value
+2021-05-10 07:21:33,009:User updated slider value
+2021-05-10 07:21:33,040:User updated slider value
+2021-05-10 07:21:33,071:User updated slider value
+2021-05-10 07:21:33,102:User updated slider value
+2021-05-10 07:21:33,134:User updated slider value
+2021-05-10 07:21:33,164:User updated slider value
+2021-05-10 07:21:33,196:User updated slider value
+2021-05-10 07:21:33,227:User updated slider value
+2021-05-10 07:21:33,243:User updated slider value
+2021-05-10 07:21:33,274:User updated slider value
+2021-05-10 07:21:33,305:User updated slider value
+2021-05-10 07:21:33,336:User updated slider value
+2021-05-10 07:21:33,368:User updated slider value
+2021-05-10 07:21:33,399:User updated slider value
+2021-05-10 07:21:33,430:User updated slider value
+2021-05-10 07:21:33,462:User updated slider value
+2021-05-10 07:21:33,493:User updated slider value
+2021-05-10 07:21:33,524:User updated slider value
+2021-05-10 07:21:33,555:User updated slider value
+2021-05-10 07:21:33,586:User updated slider value
+2021-05-10 07:21:33,617:User updated slider value
+2021-05-10 07:21:33,649:User updated slider value
+2021-05-10 07:21:33,680:User updated slider value
+2021-05-10 07:21:33,711:User updated slider value
+2021-05-10 07:21:33,742:User updated slider value
+2021-05-10 07:21:33,758:User updated slider value
+2021-05-10 07:21:33,789:User updated slider value
+2021-05-10 07:21:33,821:User updated slider value
+2021-05-10 07:21:33,852:User updated slider value
+2021-05-10 07:21:33,883:User updated slider value
+2021-05-10 07:21:33,915:User updated slider value
+2021-05-10 07:21:33,946:User updated slider value
+2021-05-10 07:21:33,977:User updated slider value
+2021-05-10 07:21:34,008:User updated slider value
+2021-05-10 07:21:34,039:User updated slider value
+2021-05-10 07:21:34,071:User updated slider value
+2021-05-10 07:21:34,102:User updated slider value
+2021-05-10 07:21:34,133:User updated slider value
+2021-05-10 07:21:34,149:User updated slider value
+2021-05-10 07:21:34,180:User updated slider value
+2021-05-10 07:21:34,211:User updated slider value
+2021-05-10 07:21:34,242:User updated slider value
+2021-05-10 07:21:34,274:User updated slider value
+2021-05-10 07:21:34,305:User updated slider value
+2021-05-10 07:21:34,336:User updated slider value
+2021-05-10 07:21:34,367:User updated slider value
+2021-05-10 07:21:34,399:User updated slider value
+2021-05-10 07:21:34,430:User updated slider value
+2021-05-10 07:21:34,461:User updated slider value
+2021-05-10 07:21:34,492:User updated slider value
+2021-05-10 07:21:34,524:User updated slider value
+2021-05-10 07:21:34,555:User updated slider value
+2021-05-10 07:21:34,586:User updated slider value
+2021-05-10 07:21:34,617:User updated slider value
+2021-05-10 07:21:34,648:User updated slider value
+2021-05-10 07:21:34,680:User updated slider value
+2021-05-10 07:21:34,696:User updated slider value
+2021-05-10 07:21:34,726:User updated slider value
+2021-05-10 07:21:34,758:User updated slider value
+2021-05-10 07:21:34,789:User updated slider value
+2021-05-10 07:21:34,820:User updated slider value
+2021-05-10 07:21:34,852:User updated slider value
+2021-05-10 07:21:34,883:User updated slider value
+2021-05-10 07:21:34,914:User updated slider value
+2021-05-10 07:21:34,945:User updated slider value
+2021-05-10 07:21:34,976:User updated slider value
+2021-05-10 07:21:35,008:User updated slider value
+2021-05-10 07:21:35,023:User updated slider value
+2021-05-10 07:21:35,054:User updated slider value
+2021-05-10 07:21:35,086:User updated slider value
+2021-05-10 07:21:35,117:User updated slider value
+2021-05-10 07:21:35,148:User updated slider value
+2021-05-10 07:21:35,179:User updated slider value
+2021-05-10 07:34:51,350:User opened a new Image: image0
+2021-05-10 07:34:53,616:User opened a new Image: image1
+2021-05-10 07:34:55,410:User chose output Display 0
+2021-05-10 07:34:55,410:User selected image1 for component1
+2021-05-10 07:34:55,410:User selected image2 for component2
+2021-05-10 07:34:55,410:User updated slider value
+2021-05-10 07:34:57,940:User chose output Display 0
+2021-05-10 07:34:57,940:User selected image1 for component1
+2021-05-10 07:34:57,940:User selected image2 for component2
+2021-05-10 07:34:57,955:User updated slider value
+2021-05-10 07:35:00,350:User chose output Display 0
+2021-05-10 07:35:00,350:User selected image1 for component1
+2021-05-10 07:35:00,365:User selected image2 for component2
+2021-05-10 07:35:00,365:User updated slider value
+2021-05-10 07:35:02,181:User updated slider value
+2021-05-10 07:35:02,212:User updated slider value
+2021-05-10 07:35:02,243:User updated slider value
+2021-05-10 07:35:02,274:User updated slider value
+2021-05-10 07:35:02,306:User updated slider value
+2021-05-10 07:35:02,337:User updated slider value
+2021-05-10 07:35:02,368:User updated slider value
+2021-05-10 07:35:02,446:User updated slider value
+2021-05-10 07:35:02,477:User updated slider value
+2021-05-10 07:35:02,509:User updated slider value
+2021-05-10 07:35:02,571:User updated slider value
+2021-05-10 07:35:02,634:User updated slider value
+2021-05-10 07:35:02,649:User updated slider value
+2021-05-10 07:35:02,681:User updated slider value
+2021-05-10 07:35:02,712:User updated slider value
+2021-05-10 07:35:02,743:User updated slider value
+2021-05-10 07:35:02,774:User updated slider value
+2021-05-10 07:35:03,134:User updated slider value
+2021-05-10 07:35:03,165:User updated slider value
+2021-05-10 07:35:03,196:User updated slider value
+2021-05-10 07:35:03,243:User updated slider value
+2021-05-10 07:35:03,290:User updated slider value
+2021-05-10 07:35:03,321:User updated slider value
+2021-05-10 07:35:03,352:User updated slider value
+2021-05-10 07:35:03,384:User updated slider value
+2021-05-10 07:35:03,415:User updated slider value
+2021-05-10 07:35:03,446:User updated slider value
+2021-05-10 07:35:03,477:User updated slider value
+2021-05-10 07:35:03,509:User updated slider value
+2021-05-10 07:35:03,540:User updated slider value
+2021-05-10 07:35:03,571:User updated slider value
+2021-05-10 07:35:03,602:User updated slider value
+2021-05-10 07:35:03,634:User updated slider value
+2021-05-10 07:35:03,665:User updated slider value
+2021-05-10 07:35:03,696:User updated slider value
+2021-05-10 07:35:03,735:User updated slider value
+2021-05-10 07:35:03,766:User updated slider value
+2021-05-10 07:35:03,798:User updated slider value
+2021-05-10 07:35:03,829:User updated slider value
+2021-05-10 07:35:03,860:User updated slider value
+2021-05-10 07:35:03,891:User updated slider value
+2021-05-10 07:35:04,860:User updated slider value
+2021-05-10 07:35:04,907:User updated slider value
+2021-05-10 07:35:04,938:User updated slider value
+2021-05-10 07:35:05,032:User updated slider value
+2021-05-10 07:35:05,079:User updated slider value
+2021-05-10 07:35:05,110:User updated slider value
+2021-05-10 07:35:05,141:User updated slider value
+2021-05-10 07:35:05,172:User updated slider value
+2021-05-10 07:35:05,203:User updated slider value
+2021-05-10 07:35:05,250:User updated slider value
+2021-05-10 07:35:05,464:User updated slider value
+2021-05-10 07:35:05,510:User updated slider value
+2021-05-10 07:35:05,542:User updated slider value
+2021-05-10 07:35:05,573:User updated slider value
+2021-05-10 07:35:05,604:User updated slider value
+2021-05-10 07:35:05,635:User updated slider value
+2021-05-10 07:35:05,698:User updated slider value
+2021-05-10 07:35:05,729:User updated slider value
+2021-05-10 07:35:05,797:User updated slider value
+2021-05-10 07:35:05,844:User updated slider value
+2021-05-10 07:35:05,875:User updated slider value
+2021-05-10 07:35:05,906:User updated slider value
+2021-05-10 07:35:05,938:User updated slider value
+2021-05-10 07:35:05,985:User updated slider value
+2021-05-10 07:35:06,031:User updated slider value
+2021-05-10 07:35:06,078:User updated slider value
+2021-05-10 07:35:06,109:User updated slider value
+2021-05-10 07:35:06,141:User updated slider value
+2021-05-10 07:35:06,172:User updated slider value
+2021-05-10 07:35:06,203:User updated slider value
+2021-05-10 07:35:06,234:User updated slider value
+2021-05-10 07:35:06,266:User updated slider value
+2021-05-10 07:35:06,313:User updated slider value
+2021-05-10 07:35:06,344:User updated slider value
+2021-05-10 07:35:06,375:User updated slider value
+2021-05-10 07:35:06,406:User updated slider value
+2021-05-10 07:35:06,453:User updated slider value
+2021-05-10 07:35:06,484:User updated slider value
+2021-05-10 07:35:06,516:User updated slider value
+2021-05-10 07:35:06,547:User updated slider value
+2021-05-10 07:35:06,578:User updated slider value
+2021-05-10 07:35:06,609:User updated slider value
+2021-05-10 07:35:06,751:User updated slider value
+2021-05-10 07:35:06,798:User updated slider value
+2021-05-10 07:35:06,829:User updated slider value
+2021-05-10 07:35:06,861:User updated slider value
+2021-05-10 07:35:06,892:User updated slider value
+2021-05-10 07:35:06,923:User updated slider value
+2021-05-10 07:35:06,954:User updated slider value
+2021-05-10 07:35:06,986:User updated slider value
+2021-05-10 07:35:07,017:User updated slider value
+2021-05-10 07:35:07,048:User updated slider value
+2021-05-10 07:35:07,095:User updated slider value
+2021-05-10 07:35:07,126:User updated slider value
+2021-05-10 07:35:07,157:User updated slider value
+2021-05-10 07:35:07,189:User updated slider value
+2021-05-10 07:35:07,220:User updated slider value
+2021-05-10 07:35:07,251:User updated slider value
+2021-05-10 07:35:07,298:User updated slider value
+2021-05-10 07:35:07,360:User updated slider value
+2021-05-10 07:35:07,439:User updated slider value
+2021-05-10 07:35:07,470:User updated slider value
+2021-05-10 07:35:09,392:User updated slider value
+2021-05-10 07:35:09,439:User updated slider value
+2021-05-10 07:35:09,470:User updated slider value
+2021-05-10 07:35:09,501:User updated slider value
+2021-05-10 07:35:09,533:User updated slider value
+2021-05-10 07:35:09,564:User updated slider value
+2021-05-10 07:35:09,611:User updated slider value
+2021-05-10 07:35:09,642:User updated slider value
+2021-05-10 07:35:09,673:User updated slider value
+2021-05-10 07:35:09,720:User updated slider value
+2021-05-10 07:35:09,751:User updated slider value
+2021-05-10 07:35:09,986:User updated slider value
+2021-05-10 07:35:10,032:User updated slider value
+2021-05-10 07:35:10,064:User updated slider value
+2021-05-10 07:35:10,095:User updated slider value
+2021-05-10 07:35:10,126:User updated slider value
+2021-05-10 07:35:10,173:User updated slider value
+2021-05-10 07:35:10,204:User updated slider value
+2021-05-10 07:35:10,236:User updated slider value
+2021-05-10 07:35:10,267:User updated slider value
+2021-05-10 07:35:10,298:User updated slider value
+2021-05-10 07:35:28,079:User opened a new Image: image0
+2021-05-10 07:35:30,620:User opened a new Image: image1
+2021-05-10 07:35:33,262:User chose output Display 0
+2021-05-10 07:35:33,262:User selected image1 for component1
+2021-05-10 07:35:33,262:User selected image2 for component2
+2021-05-10 07:35:33,278:User updated slider value
+2021-05-10 07:35:38,786:User chose output Display 0
+2021-05-10 07:35:38,786:User selected image1 for component1
+2021-05-10 07:35:38,786:User selected image2 for component2
+2021-05-10 07:35:38,786:User updated slider value
+2021-05-10 07:35:43,701:User chose output Display 0
+2021-05-10 07:35:43,701:User selected image1 for component1
+2021-05-10 07:35:43,701:User selected image2 for component2
+2021-05-10 07:35:43,701:User updated slider value
+2021-05-10 07:35:47,167:User chose output Display 0
+2021-05-10 07:35:47,167:User selected image1 for component1
+2021-05-10 07:35:47,167:User selected image2 for component2
+2021-05-10 07:35:47,167:User updated slider value
+2021-05-10 07:35:49,817:User updated slider value
+2021-05-10 07:35:49,861:User updated slider value
+2021-05-10 07:35:49,896:User updated slider value
+2021-05-10 07:35:49,911:User updated slider value
+2021-05-10 07:35:49,943:User updated slider value
+2021-05-10 07:35:49,974:User updated slider value
+2021-05-10 07:35:50,005:User updated slider value
+2021-05-10 07:35:50,036:User updated slider value
+2021-05-10 07:35:50,052:User updated slider value
+2021-05-10 07:35:50,083:User updated slider value
+2021-05-10 07:35:50,114:User updated slider value
+2021-05-10 07:35:50,146:User updated slider value
+2021-05-10 07:35:50,208:User updated slider value
+2021-05-10 07:35:50,239:User updated slider value
+2021-05-10 07:35:50,271:User updated slider value
+2021-05-10 07:35:50,302:User updated slider value
+2021-05-10 07:35:50,318:User updated slider value
+2021-05-10 07:35:50,349:User updated slider value
+2021-05-10 07:35:50,386:User updated slider value
+2021-05-10 07:35:50,401:User updated slider value
+2021-05-10 07:35:50,432:User updated slider value
+2021-05-10 07:35:50,464:User updated slider value
+2021-05-10 07:35:50,495:User updated slider value
+2021-05-10 07:35:50,667:User updated slider value
+2021-05-10 07:35:50,903:User updated slider value
+2021-05-10 07:35:50,997:User updated slider value
+2021-05-10 07:35:51,028:User updated slider value
+2021-05-10 07:35:51,059:User updated slider value
+2021-05-10 07:35:51,090:User updated slider value
+2021-05-10 07:35:51,122:User updated slider value
+2021-05-10 07:35:51,153:User updated slider value
+2021-05-10 07:35:51,168:User updated slider value
+2021-05-10 07:35:51,200:User updated slider value
+2021-05-10 07:35:51,231:User updated slider value
+2021-05-10 07:35:51,262:User updated slider value
+2021-05-10 07:35:51,278:User updated slider value
+2021-05-10 07:35:51,309:User updated slider value
+2021-05-10 07:35:51,637:User updated slider value
+2021-05-10 07:35:51,668:User updated slider value
+2021-05-10 07:35:51,700:User updated slider value
+2021-05-10 07:35:51,731:User updated slider value
+2021-05-10 07:35:51,762:User updated slider value
+2021-05-10 07:35:51,793:User updated slider value
+2021-05-10 07:35:51,809:User updated slider value
+2021-05-10 07:35:51,840:User updated slider value
+2021-05-10 07:35:51,871:User updated slider value
+2021-05-10 07:35:51,903:User updated slider value
+2021-05-10 07:35:53,906:User updated slider value
+2021-05-10 07:35:53,937:User updated slider value
+2021-05-10 07:35:53,968:User updated slider value
+2021-05-10 07:35:53,999:User updated slider value
+2021-05-10 07:35:54,015:User updated slider value
+2021-05-10 07:35:54,046:User updated slider value
+2021-05-10 07:35:54,077:User updated slider value
+2021-05-10 07:35:54,109:User updated slider value
+2021-05-10 07:43:08,179:User opened a new Image: image0
+2021-05-10 07:43:10,783:User opened a new Image: image1
+2021-05-10 07:43:12,913:User chose output Display 0
+2021-05-10 07:43:12,913:User selected image1 for component1
+2021-05-10 07:43:12,913:User selected image2 for component2
+2021-05-10 07:43:12,913:User updated slider value
+2021-05-10 07:43:17,765:User chose output Display 0
+2021-05-10 07:43:17,765:User selected image1 for component1
+2021-05-10 07:43:17,765:User selected image2 for component2
+2021-05-10 07:43:17,765:User updated slider value
+2021-05-10 07:43:20,590:User chose output Display 0
+2021-05-10 07:43:20,590:User selected image1 for component1
+2021-05-10 07:43:20,590:User selected image2 for component2
+2021-05-10 07:43:20,590:User updated slider value
+2021-05-10 07:43:24,917:User chose output Display 0
+2021-05-10 07:43:24,917:User selected image1 for component1
+2021-05-10 07:43:24,917:User selected image2 for component2
+2021-05-10 07:43:24,917:User updated slider value
+2021-05-10 07:43:29,465:User chose output Display 0
+2021-05-10 07:43:29,465:User selected image1 for component1
+2021-05-10 07:43:29,465:User selected image2 for component2
+2021-05-10 07:43:29,480:User updated slider value
+2021-05-10 07:43:33,114:User chose output Display 0
+2021-05-10 07:43:33,115:User selected image1 for component1
+2021-05-10 07:43:33,115:User selected image2 for component2
+2021-05-10 07:43:33,122:User updated slider value
+2021-05-10 07:43:37,831:User chose output Display 0
+2021-05-10 07:43:37,831:User selected image1 for component1
+2021-05-10 07:43:37,831:User selected image2 for component2
+2021-05-10 07:43:37,846:User updated slider value
+2021-05-10 07:43:40,407:User updated slider value
+2021-05-10 07:43:40,438:User updated slider value
+2021-05-10 07:43:40,469:User updated slider value
+2021-05-10 07:43:40,501:User updated slider value
+2021-05-10 07:43:40,532:User updated slider value
+2021-05-10 07:43:40,563:User updated slider value
+2021-05-10 07:43:40,595:User updated slider value
+2021-05-10 07:43:40,610:User updated slider value
+2021-05-10 07:43:40,641:User updated slider value
+2021-05-10 07:43:40,673:User updated slider value
+2021-05-10 07:43:40,704:User updated slider value
+2021-05-10 07:43:40,766:User updated slider value
+2021-05-10 07:43:40,798:User updated slider value
+2021-05-10 07:43:41,204:User updated slider value
+2021-05-10 07:43:41,235:User updated slider value
+2021-05-10 07:43:41,266:User updated slider value
+2021-05-10 07:43:41,282:User updated slider value
+2021-05-10 07:43:41,313:User updated slider value
+2021-05-10 07:43:41,700:User updated slider value
+2021-05-10 07:43:41,731:User updated slider value
+2021-05-10 07:43:41,762:User updated slider value
+2021-05-10 07:43:41,793:User updated slider value
+2021-05-10 07:43:41,825:User updated slider value
+2021-05-10 07:43:41,856:User updated slider value
+2021-05-10 07:43:41,871:User updated slider value
+2021-05-10 07:43:41,903:User updated slider value
+2021-05-10 07:43:42,309:User updated slider value
+2021-05-10 07:43:42,340:User updated slider value
+2021-05-10 07:43:42,371:User updated slider value
+2021-05-10 07:43:42,403:User updated slider value
+2021-05-10 07:43:42,434:User updated slider value
+2021-05-10 07:43:42,465:User updated slider value
+2021-05-10 07:43:42,496:User updated slider value
+2021-05-10 07:43:42,559:User updated slider value
+2021-05-10 07:43:42,590:User updated slider value
+2021-05-10 07:43:42,621:User updated slider value
+2021-05-10 07:43:42,652:User updated slider value
+2021-05-10 07:43:42,684:User updated slider value
+2021-05-10 07:43:43,785:User updated slider value
+2021-05-10 07:43:43,816:User updated slider value
+2021-05-10 07:43:43,847:User updated slider value
+2021-05-10 07:43:43,878:User updated slider value
+2021-05-10 07:43:43,910:User updated slider value
+2021-05-10 07:43:43,941:User updated slider value
+2021-05-10 07:43:43,972:User updated slider value
+2021-05-10 07:43:44,003:User updated slider value
+2021-05-10 07:43:44,035:User updated slider value
+2021-05-10 07:43:44,066:User updated slider value
+2021-05-10 07:43:44,097:User updated slider value
+2021-05-10 07:43:44,128:User updated slider value
+2021-05-10 07:43:44,175:User updated slider value
+2021-05-10 07:43:44,206:User updated slider value
+2021-05-10 07:43:44,238:User updated slider value
+2021-05-10 07:43:44,269:User updated slider value
+2021-05-10 07:43:44,316:User updated slider value
+2021-05-10 07:43:44,347:User updated slider value
+2021-05-10 07:43:46,955:User updated slider value
+2021-05-10 07:43:47,002:User updated slider value
+2021-05-10 07:43:47,033:User updated slider value
+2021-05-10 07:43:47,064:User updated slider value
+2021-05-10 07:43:47,096:User updated slider value
+2021-05-10 07:43:47,127:User updated slider value
+2021-05-10 07:43:47,158:User updated slider value
+2021-05-10 07:43:47,189:User updated slider value
+2021-05-10 07:43:47,221:User updated slider value
+2021-05-10 07:43:47,252:User updated slider value
+2021-05-10 07:43:47,283:User updated slider value
+2021-05-10 07:43:47,314:User updated slider value
+2021-05-10 07:43:47,346:User updated slider value
+2021-05-10 07:43:47,379:User updated slider value
+2021-05-10 07:43:47,426:User updated slider value
+2021-05-10 07:43:47,457:User updated slider value
+2021-05-10 07:43:47,489:User updated slider value
+2021-05-10 07:43:47,520:User updated slider value
+2021-05-10 07:43:47,551:User updated slider value
+2021-05-10 07:43:47,582:User updated slider value
+2021-05-10 07:43:47,614:User updated slider value
+2021-05-10 07:43:47,645:User updated slider value
+2021-05-10 07:43:47,676:User updated slider value
+2021-05-10 07:43:47,707:User updated slider value
+2021-05-10 07:43:47,739:User updated slider value
+2021-05-10 07:43:47,770:User updated slider value
+2021-05-10 07:43:47,801:User updated slider value
+2021-05-10 07:43:47,848:User updated slider value
+2021-05-10 07:43:47,879:User updated slider value
+2021-05-10 07:43:48,567:User updated slider value
+2021-05-10 07:43:48,613:User updated slider value
+2021-05-10 07:43:48,645:User updated slider value
+2021-05-10 07:43:48,676:User updated slider value
+2021-05-10 07:43:48,707:User updated slider value
+2021-05-10 07:43:48,738:User updated slider value
+2021-05-10 07:43:48,770:User updated slider value
+2021-05-10 07:43:48,801:User updated slider value
+2021-05-10 07:43:48,832:User updated slider value
+2021-05-10 07:43:48,863:User updated slider value
+2021-05-10 07:43:48,895:User updated slider value
+2021-05-10 07:43:48,926:User updated slider value
+2021-05-10 07:43:48,957:User updated slider value
+2021-05-10 07:43:48,988:User updated slider value
+2021-05-10 07:43:49,020:User updated slider value
+2021-05-10 07:56:32,746:User opened a new Image: image0
+2021-05-10 07:56:35,220:User opened a new Image: image1
+2021-05-10 07:56:37,765:User chose output Display 0
+2021-05-10 07:56:37,765:User selected image2 for component1
+2021-05-10 07:56:37,765:User selected image1 for component2
+2021-05-10 07:56:37,780:User updated slider value
+2021-05-10 07:56:41,261:User chose output Display 0
+2021-05-10 07:56:41,261:User selected image1 for component1
+2021-05-10 07:56:41,261:User selected image1 for component2
+2021-05-10 07:56:41,276:User updated slider value
+2021-05-10 07:56:43,219:User chose output Display 0
+2021-05-10 07:56:43,219:User selected image1 for component1
+2021-05-10 07:56:43,219:User selected image2 for component2
+2021-05-10 07:56:43,219:User updated slider value
+2021-05-10 07:56:47,976:User chose output Display 0
+2021-05-10 07:56:47,976:User selected image1 for component1
+2021-05-10 07:56:47,976:User selected image2 for component2
+2021-05-10 07:56:47,992:User updated slider value
+2021-05-10 07:56:52,271:User updated slider value
+2021-05-10 07:56:52,302:User updated slider value
+2021-05-10 07:56:52,333:User updated slider value
+2021-05-10 07:56:52,365:User updated slider value
+2021-05-10 07:56:52,396:User updated slider value
+2021-05-10 07:56:52,427:User updated slider value
+2021-05-10 07:56:52,458:User updated slider value
+2021-05-10 07:56:52,974:User updated slider value
+2021-05-10 07:56:53,021:User updated slider value
+2021-05-10 07:56:53,052:User updated slider value
+2021-05-10 07:56:54,652:User updated slider value
+2021-05-10 07:56:54,699:User updated slider value
+2021-05-10 07:56:54,730:User updated slider value
+2021-05-10 07:56:54,761:User updated slider value
+2021-05-10 07:56:54,792:User updated slider value
+2021-05-10 07:56:54,824:User updated slider value
+2021-05-10 07:56:54,855:User updated slider value
+2021-05-10 07:56:54,886:User updated slider value
+2021-05-10 07:56:54,917:User updated slider value
+2021-05-10 07:56:54,949:User updated slider value
+2021-05-10 07:56:54,980:User updated slider value
+2021-05-10 07:56:55,011:User updated slider value
+2021-05-10 07:56:55,058:User updated slider value
+2021-05-10 07:56:55,246:User updated slider value
+2021-05-10 07:56:55,292:User updated slider value
+2021-05-10 07:56:55,339:User updated slider value
+2021-05-10 07:56:55,370:User updated slider value
+2021-05-10 07:56:55,402:User updated slider value
+2021-05-10 07:56:58,365:User chose output Display 0
+2021-05-10 07:56:58,365:User selected image1 for component1
+2021-05-10 07:56:58,365:User selected image2 for component2
+2021-05-10 07:56:58,365:User updated slider value
+2021-05-10 07:56:59,948:User updated slider value
+2021-05-10 07:56:59,995:User updated slider value
+2021-05-10 07:57:00,031:User updated slider value
+2021-05-10 07:57:00,082:User updated slider value
+2021-05-10 07:57:00,113:User updated slider value
+2021-05-10 07:57:00,144:User updated slider value
+2021-05-10 07:57:00,175:User updated slider value
+2021-05-10 07:57:00,208:User updated slider value
+2021-05-10 07:57:00,241:User updated slider value
+2021-05-10 07:57:00,672:User updated slider value
+2021-05-10 07:57:00,711:User updated slider value
+2021-05-10 07:57:00,743:User updated slider value
+2021-05-10 07:57:00,776:User updated slider value
+2021-05-10 07:57:00,808:User updated slider value
+2021-05-10 07:57:00,840:User updated slider value
+2021-05-10 07:57:02,994:User chose output Display 0
+2021-05-10 07:57:02,994:User selected image1 for component1
+2021-05-10 07:57:02,994:User selected image1 for component2
+2021-05-10 07:57:02,994:User updated slider value
+2021-05-10 07:57:04,461:User updated slider value
+2021-05-10 07:57:04,497:User updated slider value
+2021-05-10 07:57:04,529:User updated slider value
+2021-05-10 07:57:04,560:User updated slider value
+2021-05-10 07:57:04,591:User updated slider value
+2021-05-10 07:57:04,638:User updated slider value
+2021-05-10 07:57:04,669:User updated slider value
+2021-05-10 07:57:04,700:User updated slider value
+2021-05-10 07:57:04,747:User updated slider value
+2021-05-10 07:57:05,107:User updated slider value
+2021-05-10 07:57:05,153:User updated slider value
+2021-05-10 07:57:05,200:User updated slider value
+2021-05-10 07:57:05,232:User updated slider value
+2021-05-10 07:57:05,263:User updated slider value
+2021-05-10 07:57:05,294:User updated slider value
+2021-05-10 07:57:05,325:User updated slider value
+2021-05-10 07:57:05,356:User updated slider value
+2021-05-10 07:57:05,388:User updated slider value
+2021-05-10 07:57:05,419:User updated slider value
+2021-05-10 07:57:05,466:User updated slider value
+2021-05-10 07:57:05,856:User updated slider value
+2021-05-10 07:57:05,919:User updated slider value
+2021-05-10 07:57:05,950:User updated slider value
+2021-05-10 08:00:12,472:User opened a new Image: image0
+2021-05-10 08:00:14,642:User opened a new Image: image1
+2021-05-10 08:00:18,326:User chose output Display 0
+2021-05-10 08:00:18,326:User selected image1 for component1
+2021-05-10 08:00:18,326:User selected image1 for component2
+2021-05-10 08:00:18,341:User updated slider value
+2021-05-10 08:00:20,683:User chose output Display 0
+2021-05-10 08:00:20,683:User selected image1 for component1
+2021-05-10 08:00:20,683:User selected image2 for component2
+2021-05-10 08:00:20,683:User updated slider value
+2021-05-10 08:00:23,068:User chose output Display 0
+2021-05-10 08:00:23,068:User selected image1 for component1
+2021-05-10 08:00:23,068:User selected image2 for component2
+2021-05-10 08:00:23,083:User updated slider value
+2021-05-10 08:04:32,331:User opened a new Image: image0
+2021-05-10 08:04:34,772:User opened a new Image: image1
+2021-05-10 08:04:37,710:User chose output Display 0
+2021-05-10 08:04:37,710:User selected image1 for component1
+2021-05-10 08:04:37,710:User selected image1 for component2
+2021-05-10 08:04:37,710:User updated slider value
+2021-05-10 08:04:40,738:User chose output Display 0
+2021-05-10 08:04:40,738:User selected image1 for component1
+2021-05-10 08:04:40,738:User selected image1 for component2
+2021-05-10 08:04:40,738:User updated slider value
+2021-05-10 08:12:18,554:User opened a new Image: image0
+2021-05-10 08:12:21,051:User opened a new Image: image1
+2021-05-10 08:12:25,518:User chose output Display 0
+2021-05-10 08:12:25,518:User selected image1 for component1
+2021-05-10 08:12:25,518:User selected image1 for component2
+2021-05-10 08:12:25,518:User updated slider value
+2021-05-10 08:12:27,956:User chose output Display 0
+2021-05-10 08:12:27,956:User selected image1 for component1
+2021-05-10 08:12:27,956:User selected image1 for component2
+2021-05-10 08:12:27,956:User updated slider value
+2021-05-10 08:12:30,739:User chose output Display 0
+2021-05-10 08:12:30,739:User selected image1 for component1
+2021-05-10 08:12:30,739:User selected image1 for component2
+2021-05-10 08:12:30,739:User updated slider value
+2021-05-10 08:12:39,731:User opened a new Image: image0
+2021-05-10 08:12:43,355:User loaded different size images
+2021-05-10 08:12:45,731:User opened a new Image: image1
+2021-05-10 08:12:48,279:User chose output Display 0
+2021-05-10 08:12:48,279:User selected image1 for component1
+2021-05-10 08:12:48,279:User selected image2 for component2
+2021-05-10 08:12:48,279:User updated slider value
+2021-05-10 08:12:51,999:User chose output Display 0
+2021-05-10 08:12:51,999:User selected image1 for component1
+2021-05-10 08:12:51,999:User selected image2 for component2
+2021-05-10 08:12:51,999:User updated slider value
+2021-05-10 08:12:54,947:User chose output Display 0
+2021-05-10 08:12:54,947:User selected image1 for component1
+2021-05-10 08:12:54,947:User selected image2 for component2
+2021-05-10 08:12:54,947:User updated slider value
+2021-05-10 08:12:58,467:User updated slider value
+2021-05-10 08:12:58,483:User updated slider value
+2021-05-10 08:12:58,498:User updated slider value
+2021-05-10 08:12:58,514:User updated slider value
+2021-05-10 08:12:58,514:User updated slider value
+2021-05-10 08:12:58,514:User updated slider value
+2021-05-10 08:12:58,529:User updated slider value
+2021-05-10 08:12:58,529:User updated slider value
+2021-05-10 08:12:58,545:User updated slider value
+2021-05-10 08:12:58,545:User updated slider value
+2021-05-10 08:12:58,561:User updated slider value
+2021-05-10 08:12:58,561:User updated slider value
+2021-05-10 08:12:58,576:User updated slider value
+2021-05-10 08:12:58,576:User updated slider value
+2021-05-10 08:12:58,592:User updated slider value
+2021-05-10 08:12:58,592:User updated slider value
+2021-05-10 08:12:58,608:User updated slider value
+2021-05-10 08:12:58,608:User updated slider value
+2021-05-10 08:12:58,623:User updated slider value
+2021-05-10 08:12:58,623:User updated slider value
+2021-05-10 08:12:58,639:User updated slider value
+2021-05-10 08:12:58,639:User updated slider value
+2021-05-10 08:12:58,654:User updated slider value
+2021-05-10 08:12:58,670:User updated slider value
+2021-05-10 08:12:58,670:User updated slider value
+2021-05-10 08:12:58,686:User updated slider value
+2021-05-10 08:12:58,686:User updated slider value
+2021-05-10 08:12:58,701:User updated slider value
+2021-05-10 08:12:58,701:User updated slider value
+2021-05-10 08:12:58,717:User updated slider value
+2021-05-10 08:12:58,732:User updated slider value
+2021-05-10 08:12:58,748:User updated slider value
+2021-05-10 08:12:58,764:User updated slider value
+2021-05-10 08:12:58,764:User updated slider value
+2021-05-10 08:12:58,779:User updated slider value
+2021-05-10 08:12:58,795:User updated slider value
+2021-05-10 08:12:58,811:User updated slider value
+2021-05-10 08:12:58,811:User updated slider value
+2021-05-10 08:12:58,842:User updated slider value
+2021-05-10 08:12:58,857:User updated slider value
+2021-05-10 08:13:00,727:User updated slider value
+2021-05-10 08:13:00,742:User updated slider value
+2021-05-10 08:13:00,758:User updated slider value
+2021-05-10 08:13:00,758:User updated slider value
+2021-05-10 08:13:00,774:User updated slider value
+2021-05-10 08:13:00,774:User updated slider value
+2021-05-10 08:13:00,789:User updated slider value
+2021-05-10 08:13:00,789:User updated slider value
+2021-05-10 08:13:00,805:User updated slider value
+2021-05-10 08:13:00,821:User updated slider value
+2021-05-10 08:13:00,821:User updated slider value
+2021-05-10 08:13:00,836:User updated slider value
+2021-05-10 08:13:00,836:User updated slider value
+2021-05-10 08:13:00,852:User updated slider value
+2021-05-10 08:13:00,852:User updated slider value
+2021-05-10 08:13:00,867:User updated slider value
+2021-05-10 08:13:00,883:User updated slider value
+2021-05-10 08:13:00,883:User updated slider value
+2021-05-10 08:13:00,899:User updated slider value
+2021-05-10 08:13:00,914:User updated slider value
+2021-05-10 08:13:00,930:User updated slider value
+2021-05-10 08:13:00,930:User updated slider value
+2021-05-10 08:13:00,946:User updated slider value
+2021-05-10 08:13:00,946:User updated slider value
+2021-05-10 08:13:00,961:User updated slider value
+2021-05-10 08:13:00,961:User updated slider value
+2021-05-10 08:13:00,977:User updated slider value
+2021-05-10 08:13:00,992:User updated slider value
+2021-05-10 08:13:00,992:User updated slider value
+2021-05-10 08:13:01,008:User updated slider value
+2021-05-10 08:13:01,008:User updated slider value
+2021-05-10 08:13:01,024:User updated slider value
+2021-05-10 08:13:01,039:User updated slider value
+2021-05-10 08:13:01,039:User updated slider value
+2021-05-10 08:13:01,055:User updated slider value
+2021-05-10 08:13:01,055:User updated slider value
+2021-05-10 08:13:01,070:User updated slider value
+2021-05-10 08:13:01,086:User updated slider value
+2021-05-10 08:13:01,086:User updated slider value
+2021-05-10 08:13:01,102:User updated slider value
+2021-05-10 08:13:01,117:User updated slider value
+2021-05-10 08:13:01,648:User updated slider value
+2021-05-10 08:13:01,664:User updated slider value
+2021-05-10 08:13:01,680:User updated slider value
+2021-05-10 08:13:01,695:User updated slider value
+2021-05-10 08:13:01,695:User updated slider value
+2021-05-10 08:13:01,711:User updated slider value
+2021-05-10 08:13:01,727:User updated slider value
+2021-05-10 08:13:01,727:User updated slider value
+2021-05-10 08:13:01,742:User updated slider value
+2021-05-10 08:13:01,742:User updated slider value
+2021-05-10 08:13:01,758:User updated slider value
+2021-05-10 08:13:01,773:User updated slider value
+2021-05-10 08:13:01,773:User updated slider value
+2021-05-10 08:13:01,789:User updated slider value
+2021-05-10 08:13:01,805:User updated slider value
+2021-05-10 08:13:01,805:User updated slider value
+2021-05-10 08:13:01,820:User updated slider value
+2021-05-10 08:13:01,820:User updated slider value
+2021-05-10 08:13:01,836:User updated slider value
+2021-05-10 08:13:01,852:User updated slider value
+2021-05-10 08:13:01,852:User updated slider value
+2021-05-10 08:13:01,867:User updated slider value
+2021-05-10 08:13:01,883:User updated slider value
+2021-05-10 08:13:01,883:User updated slider value
+2021-05-10 08:13:01,898:User updated slider value
+2021-05-10 08:13:01,914:User updated slider value
+2021-05-10 08:13:01,914:User updated slider value
+2021-05-10 08:13:01,930:User updated slider value
+2021-05-10 08:13:01,945:User updated slider value
+2021-05-10 08:13:01,945:User updated slider value
+2021-05-10 08:13:01,961:User updated slider value
+2021-05-10 08:13:01,977:User updated slider value
+2021-05-10 08:13:01,977:User updated slider value
+2021-05-10 08:13:01,992:User updated slider value
+2021-05-10 08:13:02,008:User updated slider value
+2021-05-10 08:13:02,008:User updated slider value
+2021-05-10 08:13:02,023:User updated slider value
+2021-05-10 08:13:02,039:User updated slider value
+2021-05-10 08:13:02,039:User updated slider value
+2021-05-10 08:13:02,055:User updated slider value
+2021-05-10 08:13:02,070:User updated slider value
+2021-05-10 08:13:02,070:User updated slider value
+2021-05-10 08:13:02,086:User updated slider value
+2021-05-10 08:13:02,101:User updated slider value
+2021-05-10 08:13:02,117:User updated slider value
+2021-05-10 08:13:02,117:User updated slider value
+2021-05-10 08:13:02,133:User updated slider value
+2021-05-10 08:13:02,148:User updated slider value
+2021-05-10 08:13:02,148:User updated slider value
+2021-05-10 08:13:11,901:User chose output Display 0
+2021-05-10 08:13:11,901:User selected image1 for component1
+2021-05-10 08:13:11,901:User selected image2 for component2
+2021-05-10 08:13:11,901:User updated slider value
+2021-05-10 08:13:13,925:User updated slider value
+2021-05-10 08:13:13,956:User updated slider value
+2021-05-10 08:13:13,972:User updated slider value
+2021-05-10 08:13:13,972:User updated slider value
+2021-05-10 08:13:13,987:User updated slider value
+2021-05-10 08:13:14,003:User updated slider value
+2021-05-10 08:13:14,003:User updated slider value
+2021-05-10 08:13:14,019:User updated slider value
+2021-05-10 08:13:14,034:User updated slider value
+2021-05-10 08:13:14,050:User updated slider value
+2021-05-10 08:13:14,050:User updated slider value
+2021-05-10 08:13:14,065:User updated slider value
+2021-05-10 08:13:14,081:User updated slider value
+2021-05-10 08:13:14,081:User updated slider value
+2021-05-10 08:13:14,331:User updated slider value
+2021-05-10 08:13:14,347:User updated slider value
+2021-05-10 08:13:14,367:User updated slider value
+2021-05-10 08:13:14,371:User updated slider value
+2021-05-10 08:13:14,386:User updated slider value
+2021-05-10 08:13:14,386:User updated slider value
+2021-05-10 08:13:14,402:User updated slider value
+2021-05-10 08:13:14,417:User updated slider value
+2021-05-10 08:13:14,433:User updated slider value
+2021-05-10 08:13:14,449:User updated slider value
+2021-05-10 08:13:14,449:User updated slider value
+2021-05-10 08:13:14,464:User updated slider value
+2021-05-10 08:13:14,464:User updated slider value
+2021-05-10 08:13:14,480:User updated slider value
+2021-05-10 08:13:14,496:User updated slider value
+2021-05-10 08:13:14,511:User updated slider value
+2021-05-10 08:13:14,511:User updated slider value
+2021-05-10 08:13:14,527:User updated slider value
+2021-05-10 08:13:14,542:User updated slider value
+2021-05-10 08:13:17,403:User chose output Display 0
+2021-05-10 08:13:17,403:User selected image1 for component1
+2021-05-10 08:13:17,403:User selected image2 for component2
+2021-05-10 08:13:17,418:User updated slider value
+2021-05-10 08:13:18,936:User updated slider value
+2021-05-10 08:13:18,967:User updated slider value
+2021-05-10 08:13:18,982:User updated slider value
+2021-05-10 08:13:18,998:User updated slider value
+2021-05-10 08:13:19,014:User updated slider value
+2021-05-10 08:13:19,029:User updated slider value
+2021-05-10 08:13:19,045:User updated slider value
+2021-05-10 08:13:19,060:User updated slider value
+2021-05-10 08:13:19,076:User updated slider value
+2021-05-10 08:13:19,092:User updated slider value
+2021-05-10 08:13:19,107:User updated slider value
+2021-05-10 08:13:19,123:User updated slider value
+2021-05-10 08:13:19,123:User updated slider value
+2021-05-10 08:13:19,139:User updated slider value
+2021-05-10 08:13:19,154:User updated slider value
+2021-05-10 08:13:19,170:User updated slider value
+2021-05-10 08:13:19,185:User updated slider value
+2021-05-10 08:13:19,201:User updated slider value
+2021-05-10 08:13:20,935:User chose output Display 0
+2021-05-10 08:13:20,935:User selected image1 for component1
+2021-05-10 08:13:20,935:User selected image2 for component2
+2021-05-10 08:13:20,935:User updated slider value

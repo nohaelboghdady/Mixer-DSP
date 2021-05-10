@@ -14,6 +14,11 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 from math import exp
+import logging
+# Remove all handlers associated with the root logger object.
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
+logging.basicConfig(filename='test.log', level=logging.DEBUG,format='%(asctime)s:%(message)s' )
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -378,11 +383,14 @@ class Ui_MainWindow(object):
         print(isLoaded)
         if isLoaded:
             self.inputImages[index] = currentImage
+            logging.info('User opened a new Image: image%s' %index )
+
 
 
     def changeComponent(self,imageIndex,choice):
         currentImage = self.inputImages[imageIndex]
         currentImage.changeComponent(choice)
+        logging.info('User changed the display component ')
     
     
     def chooseOuput(self,displayIndex): 
@@ -393,7 +401,8 @@ class Ui_MainWindow(object):
         #get targeted output display & scene
         currentDisplay = self.outputDisplays[displayIndex]
         currentScene = self.outputScenes[displayIndex]
-        print(currentDisplay)
+
+        logging.debug('User chose output Display %s' %displayIndex)
 
     
         #assign 1st image to chosen output display 
@@ -407,10 +416,14 @@ class Ui_MainWindow(object):
         image1 = self.outputImages[0]
         image2 = self.outputImages[1]
         
+        logging.info('User selected image%s for component1' %(self.Component1.currentIndex()+1))
+        logging.info('User selected image%s for component2' %(self.Component2.currentIndex()+1))
+        
+        
         #which component for each image
         firstImageChoice = self.component1_components.currentIndex()
         secondImageChoice = self.component2_components.currentIndex()
-        print(firstImageChoice,secondImageChoice)
+        
         
         
         
@@ -421,7 +434,6 @@ class Ui_MainWindow(object):
         #for 2nd combobox
         self.comp2_img1 = image1.updateOutputScene(currentDisplay,currentScene,self.component2_components.currentIndex())
         self.comp2_img2 = image2.updateOutputScene(currentDisplay,currentScene,self.component2_components.currentIndex())
-        
         
         self.updateSliderValue()
         
@@ -444,7 +456,7 @@ class Ui_MainWindow(object):
         else:
             isReal_Imag = False
             
-        
+        logging.info('User updated slider value')
         # newComponent = newComp1 + newComp2
         self.outputImages[self.firstInputImage].redraw(realTerm,ImagTerm,isReal_Imag)
 
@@ -530,8 +542,6 @@ class Image(Ui_MainWindow):
 
     def loadImage(self,index,size,fixedScene,fixedDisplay,ComponentsScene,ComponentsDisplay):
         """ This function will load the user selected image""" 
-        print('class load Image')
-        
         #change extension based on photos for test (.jpg,.jpeg,.png)
         image_path = QFileDialog.getOpenFileName(filter="Image (*.png*)")[0]
         
@@ -572,6 +582,8 @@ class Image(Ui_MainWindow):
             
             #add to scene to be drawn
             self.addToScene(index)
+            
+            
             
             return True
             
@@ -640,9 +652,11 @@ class Image(Ui_MainWindow):
         if (self.imageSizes[0] == self.imageSizes[1]) or (self.imageSizes[0]!= None and self.imageSizes[1] == None) or (self.imageSizes[0]== None and self.imageSizes[1] != None):
             # self.showMessage('Alert', 'Please upload another image for comparison ')
             return True
+            logging.info('User opened an accepted image size')
         else:
             self.imageSizes[index] = self.previousImage
             self.showMessage('Warning', 'Size mismatch, please load another image.  ')
+            logging.warning('User loaded different size images')
             return False
       
         
@@ -659,7 +673,6 @@ class Image(Ui_MainWindow):
         magnitudeFrame = cv2.cvtColor(magnitude_spectrum, cv2.COLOR_BGR2RGB)
         magnitude_image = QImage(magnitudeFrame, magnitudeFrame.shape[1],magnitudeFrame.shape[0],magnitudeFrame.strides[0],QImage.Format_RGB888) 
         self.magnitude_spectrum = QPixmap.fromImage(magnitude_image)
-        # self.matrixComponents[0] = magnitude_spectrum
         
         #getPhase
         phase_spectrum = np.angle(fshift)
@@ -668,7 +681,6 @@ class Image(Ui_MainWindow):
         phaseFrame = cv2.cvtColor(phase_spectrum, cv2.COLOR_BGR2RGB)
         phase_image = QImage(phaseFrame, phaseFrame.shape[1],phaseFrame.shape[0],phaseFrame.strides[0],QImage.Format_RGB888)
         self.phase_spectrum = QPixmap.fromImage(phase_image)
-        # self.matrixComponents[1] = phase_spectrum
         
         #getReal
         real_component = np.real(fshift)
@@ -676,8 +688,7 @@ class Image(Ui_MainWindow):
         real_component = np.asarray(real_component, dtype=np.uint8)
         realFrame = cv2.cvtColor(real_component, cv2.COLOR_BGR2RGB)
         real_image = QImage(realFrame, realFrame.shape[1],realFrame.shape[0],realFrame.strides[0],QImage.Format_RGB888)
-        self.real_component = QPixmap.fromImage(real_image)
-        
+        self.real_component = QPixmap.fromImage(real_image) 
         
         #getImaginary
         imaginary_component = np.imag(fshift)
@@ -689,21 +700,23 @@ class Image(Ui_MainWindow):
         
         
         #get uniform magnitude(all magnitude values are set to 1)
-        self.matrixComponents[4] = np.full(shape, 1)
+        self.matrixComponents[4] = np.full(shape, 0)
+        # self.matrixComponents[4] = np.abs(dft)/np.abs(dft)
          
         # get uniform phase (all phase values are set to 0)
-        self.matrixComponents[5] = np.full(shape,0)
+        self.matrixComponents[5] = np.full(shape,1)
     
     def changeComponent(self,choice):
 
         currentComponent = self.components[choice]
         # currentComponent = self.ComponentsScene.items()[choice]
-        
+        logging.info('User chosen new component updated on screen')
         self.ComponentsScene.removeItem(currentComponent)
         self.ComponentsScene.addItem(currentComponent)
 
         #set the graphics scene to our graphics view
         self.ComponentsDisplay.setScene(self.ComponentsScene)
+        
    
         
     def updateOutputScene(self,display,scene,choice):
