@@ -13,6 +13,7 @@ from PyQt5.QtGui import *
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+from math import exp
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -71,9 +72,13 @@ class Ui_MainWindow(object):
         self.image1_Display = QtWidgets.QGraphicsView(self.centralwidget)
         self.image1_Display.setObjectName("image1_Display")
         self.horizontalLayout_6.addWidget(self.image1_Display)
+        self.image1_Display.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
+        self.image1_Display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
         self.image1_CompDisplay = QtWidgets.QGraphicsView(self.centralwidget)
         self.image1_CompDisplay.setObjectName("image1_CompDisplay")
         self.horizontalLayout_6.addWidget(self.image1_CompDisplay)
+        self.image1_CompDisplay.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
+        self.image1_CompDisplay.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
         self.gridLayout_2.addLayout(self.horizontalLayout_6, 1, 0, 1, 1)
         self.gridLayout_5.addLayout(self.gridLayout_2, 0, 0, 1, 1)
         self.gridLayout = QtWidgets.QGridLayout()
@@ -114,9 +119,13 @@ class Ui_MainWindow(object):
         self.image2_Display = QtWidgets.QGraphicsView(self.centralwidget)
         self.image2_Display.setObjectName("image2_Display")
         self.horizontalLayout_4.addWidget(self.image2_Display)
+        self.image2_Display.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
+        self.image2_Display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
         self.image2_CompDisplay = QtWidgets.QGraphicsView(self.centralwidget)
         self.image2_CompDisplay .setObjectName("image2_CompDisplay ")
         self.horizontalLayout_4.addWidget(self.image2_CompDisplay )
+        self.image2_CompDisplay.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
+        self.image2_CompDisplay.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
         self.gridLayout.addLayout(self.horizontalLayout_4, 1, 0, 1, 1)
         self.gridLayout_5.addLayout(self.gridLayout, 1, 0, 1, 1)
         self.gridLayout_7.addLayout(self.gridLayout_5, 0, 0, 1, 1)
@@ -148,12 +157,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.addWidget(self.Component1)
         spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_10.addItem(spacerItem5)
-        self.horizontalSlider = QtWidgets.QSlider(self.centralwidget)
-        self.horizontalSlider.setMinimumSize(QtCore.QSize(200, 0))
-        self.horizontalSlider.setMaximum(100)
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider.setObjectName("horizontalSlider")
-        self.horizontalLayout_10.addWidget(self.horizontalSlider)
+        self.comp1_Slider = QtWidgets.QSlider(self.centralwidget)
+        self.comp1_Slider.setMinimumSize(QtCore.QSize(200, 0))
+        self.comp1_Slider.setMaximum(100)
+        self.comp1_Slider.setOrientation(QtCore.Qt.Horizontal)
+        self.comp1_Slider.setObjectName("comp1_Slider")
+        self.horizontalLayout_10.addWidget(self.comp1_Slider)
         self.gridLayout_4.addLayout(self.horizontalLayout_10, 3, 0, 1, 1)
         self.horizontalLayout_13 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_13.setObjectName("horizontalLayout_13")
@@ -197,12 +206,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout_12.addWidget(self.Component2)
         spacerItem7 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_12.addItem(spacerItem7)
-        self.horizontalSlider_2 = QtWidgets.QSlider(self.centralwidget)
-        self.horizontalSlider_2.setMinimumSize(QtCore.QSize(200, 0))
-        self.horizontalSlider_2.setMaximum(100)
-        self.horizontalSlider_2.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider_2.setObjectName("horizontalSlider_2")
-        self.horizontalLayout_12.addWidget(self.horizontalSlider_2)
+        self.comp2_Slider = QtWidgets.QSlider(self.centralwidget)
+        self.comp2_Slider.setMinimumSize(QtCore.QSize(200, 0))
+        self.comp2_Slider.setMaximum(100)
+        self.comp2_Slider.setOrientation(QtCore.Qt.Horizontal)
+        self.comp2_Slider.setObjectName("comp2_Slider")
+        self.horizontalLayout_12.addWidget(self.comp2_Slider)
         self.gridLayout_4.addLayout(self.horizontalLayout_12, 6, 0, 1, 1)
         self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_11.setObjectName("horizontalLayout_11")
@@ -257,9 +266,13 @@ class Ui_MainWindow(object):
         self.output1_Display = QtWidgets.QGraphicsView(self.centralwidget)
         self.output1_Display.setObjectName("output1_Display")
         self.horizontalLayout_7.addWidget(self.output1_Display)
+        self.output1_Display.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
+        self.output1_Display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
         self.output2_Display = QtWidgets.QGraphicsView(self.centralwidget)
         self.output2_Display.setObjectName("output2_Display")
         self.horizontalLayout_7.addWidget(self.output2_Display)
+        self.output2_Display.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
+        self.output2_Display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
         self.gridLayout_3.addLayout(self.horizontalLayout_7, 1, 0, 1, 1)
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
@@ -299,26 +312,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
-        
-        #added code
-        self.image1_Display.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        self.image1_Display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        
-        self.image2_Display.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        self.image2_Display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        
-        self.image1_CompDisplay.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        self.image1_CompDisplay.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        
-        self.image2_CompDisplay.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        self.image2_CompDisplay.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        
-        self.output1_Display.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        self.output1_Display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        
-        self.output2_Display.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        self.output2_Display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff);
-        
+
         #create graphics scenes
         self.inputScene1 = QGraphicsScene()
         self.inputScene2 = QGraphicsScene()
@@ -360,11 +354,14 @@ class Ui_MainWindow(object):
         self.Image1_components.activated.connect(lambda: self.changeComponent(self.firstInputImage, self.Image1_components.currentIndex()))
         self.Image2_components.activated.connect(lambda: self.changeComponent(self.secondInputImage, self.Image2_components.currentIndex()))
     
-        # self.MixerOutput.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
-        # self.Component1.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
-        # self.Component2.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
+        self.MixerOutput.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
+        self.Component1.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
+        self.Component2.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
         self.component1_components.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
         self.component2_components.activated.connect(lambda: self.chooseOuput(self.MixerOutput.currentIndex()))
+        
+        self.comp1_Slider.valueChanged.connect(self.updateSliderValue)
+        self.comp2_Slider.valueChanged.connect(self.updateSliderValue)
     
     def createInstance(self,index):
         
@@ -400,36 +397,30 @@ class Ui_MainWindow(object):
 
     
         #assign 1st image to chosen output display 
-        self.outputImages[self.firstInputImage] = self.inputImages[self.Component1.currentIndex()]
-        print(self.Component1.currentIndex())
+        self.outputImages[0] = self.inputImages[self.Component1.currentIndex()]
         
         #assign 2nd image to chosen output display 
-        self.outputImages[self.secondInputImage] = self.inputImages[self.Component2.currentIndex()]
-        print(self.Component2.currentIndex())
+        self.outputImages[1] = self.inputImages[self.Component2.currentIndex()]
         
  
         # get chosen images' instances for output manipulation
-        image1 = self.outputImages[self.firstInputImage]
-        image2 = self.outputImages[self.secondInputImage]
+        image1 = self.outputImages[0]
+        image2 = self.outputImages[1]
         
         #which component for each image
         firstImageChoice = self.component1_components.currentIndex()
         secondImageChoice = self.component2_components.currentIndex()
+        print(firstImageChoice,secondImageChoice)
         
-        print(firstImageChoice,"             ",secondImageChoice)
         
         
         #transfer to class for image manipulation
-        self.comp1_img1 = image1.updateOutputScene(currentDisplay,currentScene,firstImageChoice)
-        self.comp1_img2 = image2.updateOutputScene(currentDisplay,currentScene,firstImageChoice)
+        self.comp1_img1 = image1.updateOutputScene(currentDisplay,currentScene,self.component1_components.currentIndex())
+        self.comp1_img2 = image2.updateOutputScene(currentDisplay,currentScene,self.component1_components.currentIndex())
         
         #for 2nd combobox
-        self.comp2_img1 = image1.updateOutputScene(currentDisplay,currentScene,secondImageChoice)
-        self.comp2_img2 = image2.updateOutputScene(currentDisplay,currentScene,secondImageChoice)
-        
-        #test
-        if self.comp2_img1.all() == image1.matrixComponents[firstImageChoice].all():
-            print("aywaaaa l magnitudee bta3 iamge 1 sah")
+        self.comp2_img1 = image1.updateOutputScene(currentDisplay,currentScene,self.component2_components.currentIndex())
+        self.comp2_img2 = image2.updateOutputScene(currentDisplay,currentScene,self.component2_components.currentIndex())
         
         
         self.updateSliderValue()
@@ -440,11 +431,22 @@ class Ui_MainWindow(object):
     def updateSliderValue(self):
         image = Image()
         
-        newComp1 = image.sliderEffect(self.comp1_img1, self.comp1_img2,0)
-        newComp2 = image.sliderEffect(self.comp2_img1, self.comp2_img2,0)
+        if self.component1_components.currentIndex() == 0 or self.component1_components.currentIndex() == 2 or self.component1_components.currentIndex() == 4:
+            realTerm = image.sliderEffect(self.comp1_img1, self.comp1_img2,self.comp1_Slider.value())
+            ImagTerm = image.sliderEffect(self.comp2_img2,self.comp2_img1,self.comp2_Slider.value())
+        elif self.component1_components.currentIndex() == 1 or self.component1_components.currentIndex() == 3 or self.component1_components.currentIndex() == 5:
+            ImagTerm = image.sliderEffect(self.comp1_img1, self.comp1_img2,self.comp1_Slider.value())
+            realTerm = image.sliderEffect(self.comp2_img2,self.comp2_img1,self.comp2_Slider.value())
+            
         
-        newComponent = newComp1 + newComp2
-        self.outputImages[self.firstInputImage].redraw(newComponent)
+        if (self.component1_components.currentIndex() == 2 or self.component1_components.currentIndex() == 3 ) and (self.component2_components.currentIndex() == 2 or self.component2_components.currentIndex() == 3):
+            isReal_Imag = True
+        else:
+            isReal_Imag = False
+            
+        
+        # newComponent = newComp1 + newComp2
+        self.outputImages[self.firstInputImage].redraw(realTerm,ImagTerm,isReal_Imag)
 
         
 
@@ -500,7 +502,6 @@ class Image(Ui_MainWindow):
     previousImage = None
     
     def __init__(self):
-        self.image_path = None
         self.image_dimensions = None
         self.pixmap = None
         self.pixmapItem = None
@@ -519,13 +520,12 @@ class Image(Ui_MainWindow):
         self.imagItem = None
         self.outputDisplay = None
         self.outputScene = None
-        self.Comp2Manipulate = None
+        self.uniform_phase = None
+        self.uniform_magnitude = None
         self.matrixComponents = [None,None,None,None,None,None]
         self.components = [None,None,None,None,None,None]
 
         
-        #NOTE: how to update item pixmap values after any change in it
-        # self.pixmapItem.setPixmap(newPixmap)
         
 
     def loadImage(self,index,size,fixedScene,fixedDisplay,ComponentsScene,ComponentsDisplay):
@@ -533,9 +533,9 @@ class Image(Ui_MainWindow):
         print('class load Image')
         
         #change extension based on photos for test (.jpg,.jpeg,.png)
-        self.image_path = QFileDialog.getOpenFileName(filter="Image (*.png*)")[0]
+        image_path = QFileDialog.getOpenFileName(filter="Image (*.png*)")[0]
         
-        image = cv2.imread(self.image_path,cv2.IMREAD_GRAYSCALE)
+        image = cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
         frame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         # frame = image
         
@@ -543,10 +543,7 @@ class Image(Ui_MainWindow):
         self.inputImageArray = image
         
         self.image_dimensions = size
-        print('file:',self.image_path)
-        
-        # #get pixmap of image
-        # initial_pixmap = QPixmap(self.image_path)
+        print('file:',image_path)
 
 
         #change to pixmap
@@ -656,7 +653,8 @@ class Image(Ui_MainWindow):
         
         #getMagnitude
         magnitude_spectrum = 20*np.log(np.abs(fshift))
-        self.matrixComponents[0] = magnitude_spectrum
+        shape = np.shape(magnitude_spectrum)
+        self.matrixComponents[0] = np.abs(dft)
         magnitude_spectrum = np.asarray(magnitude_spectrum, dtype=np.uint8)
         magnitudeFrame = cv2.cvtColor(magnitude_spectrum, cv2.COLOR_BGR2RGB)
         magnitude_image = QImage(magnitudeFrame, magnitudeFrame.shape[1],magnitudeFrame.shape[0],magnitudeFrame.strides[0],QImage.Format_RGB888) 
@@ -665,7 +663,7 @@ class Image(Ui_MainWindow):
         
         #getPhase
         phase_spectrum = np.angle(fshift)
-        self.matrixComponents[1] = phase_spectrum
+        self.matrixComponents[1] = np.angle(dft)
         phase_spectrum = np.asarray(phase_spectrum, dtype=np.uint8)
         phaseFrame = cv2.cvtColor(phase_spectrum, cv2.COLOR_BGR2RGB)
         phase_image = QImage(phaseFrame, phaseFrame.shape[1],phaseFrame.shape[0],phaseFrame.strides[0],QImage.Format_RGB888)
@@ -674,30 +672,32 @@ class Image(Ui_MainWindow):
         
         #getReal
         real_component = np.real(fshift)
+        self.matrixComponents[2] = np.real(dft)
         real_component = np.asarray(real_component, dtype=np.uint8)
         realFrame = cv2.cvtColor(real_component, cv2.COLOR_BGR2RGB)
         real_image = QImage(realFrame, realFrame.shape[1],realFrame.shape[0],realFrame.strides[0],QImage.Format_RGB888)
         self.real_component = QPixmap.fromImage(real_image)
-        self.matrixComponents[2] = real_component
+        
         
         #getImaginary
         imaginary_component = np.imag(fshift)
+        self.matrixComponents[3] = np.imag(dft)
         imaginary_component = np.asarray(imaginary_component, dtype=np.uint8)
         imagFrame = cv2.cvtColor(imaginary_component, cv2.COLOR_BGR2RGB)
         imaginary_image = QImage(imagFrame, imagFrame.shape[1],imagFrame.shape[0],imagFrame.strides[0],QImage.Format_RGB888)
         self.imag_component = QPixmap.fromImage(imaginary_image)
-        self.matrixComponents[3] = imaginary_component
- 
-    
-         #get uniform magnitude(all magnitude values are set to 1)
+        
+        
+        #get uniform magnitude(all magnitude values are set to 1)
+        self.matrixComponents[4] = np.full(shape, 1)
          
-         # get uniform phase (all phase values are set to 0)
+        # get uniform phase (all phase values are set to 0)
+        self.matrixComponents[5] = np.full(shape,0)
     
     def changeComponent(self,choice):
 
         currentComponent = self.components[choice]
         # currentComponent = self.ComponentsScene.items()[choice]
-        print(choice)
         
         self.ComponentsScene.removeItem(currentComponent)
         self.ComponentsScene.addItem(currentComponent)
@@ -711,32 +711,42 @@ class Image(Ui_MainWindow):
         self.outputScene = scene
         
         # self.Comp2Manipulate = self.components[choice]
-        self.Comp2Manipulate = self.matrixComponents[choice]
+        Comp2Manipulate = self.matrixComponents[choice]
         
         
         # self.redraw()
         
-        return self.Comp2Manipulate
+        return Comp2Manipulate
     
     
     #manipulate the image based on its slider values then redraw it
     def sliderEffect(self,comp1,comp2,value):
-        newComp = comp1 * value + comp2 * (100-value)
+        
+        newComp = (comp1 * value/100) + (comp2 * (100-value)/100)
+
         return newComp
 
-    def redraw(self,newComponent):
+
+    def redraw(self,realTerm,ImagTerm,isReal_Imag):
         
         #Fourier Inverse
-        newComponent = np.fft.ifftshift(newComponent)
-        newComponent = np.fft.ifft(newComponent)
+        if isReal_Imag:
+            imageMatrix = realTerm + 1j*ImagTerm
+            image = np.fft.ifft2(imageMatrix) 
+        else:
+            imageMatrix= realTerm*np.cos(ImagTerm)+1j*realTerm*np.sin(ImagTerm)
+            image = np.fft.ifft2(imageMatrix)
+            
         
-        #test 
-        new = np.asarray(newComponent, dtype=np.uint8)
-        imagFrame = cv2.cvtColor(new, cv2.COLOR_BGR2RGB)
-        newImage = QImage(imagFrame, imagFrame.shape[1],imagFrame.shape[0],imagFrame.strides[0],QImage.Format_RGB888)
-        comp2Darw = QPixmap.fromImage(newImage)
-        comp2Darw = comp2Darw.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
-        item = QGraphicsPixmapItem(comp2Darw)
+        image = np.asarray(image, dtype=np.uint8)
+        imageFrame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        newImage = QImage(imageFrame, imageFrame.shape[1],imageFrame.shape[0],imageFrame.strides[0],QImage.Format_RGB888) 
+        
+        
+        #display 
+        image2Darw = QPixmap.fromImage(newImage)
+        image2Darw = image2Darw.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
+        item = QGraphicsPixmapItem(image2Darw)
         self.outputScene.addItem(item) 
         self.outputDisplay.setScene(self.outputScene)
         
