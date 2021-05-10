@@ -700,11 +700,11 @@ class Image(Ui_MainWindow):
         
         
         #get uniform magnitude(all magnitude values are set to 1)
-        self.matrixComponents[4] = np.full(shape, 0)
+        self.matrixComponents[4] = np.full(shape, 1000)
         # self.matrixComponents[4] = np.abs(dft)/np.abs(dft)
          
         # get uniform phase (all phase values are set to 0)
-        self.matrixComponents[5] = np.full(shape,1)
+        self.matrixComponents[5] = np.full(shape,0)
     
     def changeComponent(self,choice):
 
