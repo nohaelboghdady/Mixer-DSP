@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'main.ui'
-#
-# Created by: PyQt5 UI code generator 5.9.2
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import  QApplication, QMainWindow,QFileDialog, QGraphicsScene, QGraphicsView, QGraphicsItem, QGraphicsPixmapItem, QMessageBox
 from PyQt5.QtCore import Qt
@@ -383,7 +375,6 @@ class Ui_MainWindow(object):
         currentImage = Image()
         isLoaded = currentImage.loadImage(index,self.output2_Display.size(),fixedScene,fixedDisplay,ComponentsScene,ComponentsDisplay)
 
-        print(isLoaded)
         if isLoaded:
             self.inputImages[index] = currentImage
             logging.info('User opened a new Image: image%s' %index )
@@ -462,11 +453,10 @@ class Ui_MainWindow(object):
             isReal_Imag = False
             
         logging.info('User updated slider value')
-        # newComponent = newComp1 + newComp2
+
         self.outputImages[self.firstInputImage].redraw(realTerm,ImagTerm,isReal_Imag)
 
     def disable(self):
-        print('inside disable')
         if (self.component1_components.currentIndex() == 0 ) :
             for i in range(6):
                 self.component2_components.model().item(i).setEnabled(True) if (i == 1 or i == 5) else self.component2_components.model().item(i).setEnabled(False)
@@ -572,14 +562,12 @@ class Image(Ui_MainWindow):
         
         image = cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
         frame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        # frame = image
         
         #for the fft & slider manipulation
         self.inputImageArray = image
         
         self.image_dimensions = size
         print('file:',image_path)
-
 
         #change to pixmap
         self.image = QImage(frame, frame.shape[1],frame.shape[0],frame.strides[0],QImage.Format_RGB888)
@@ -605,7 +593,7 @@ class Image(Ui_MainWindow):
             self.ComponentsScene = ComponentsScene
             self.ComponentsDisplay = ComponentsDisplay
             
-            #add to scene to be drawn
+            # add to scene to be drawn
             self.addToScene(index)
             
             
@@ -662,8 +650,6 @@ class Image(Ui_MainWindow):
         self.ComponentsScene.addItem(self.realItem)
         self.ComponentsScene.addItem(self.phaseItem)
         self.ComponentsScene.addItem(self.magnitudeItem)
-        
-        
         
         
         #set the graphics scene to our graphics view
@@ -750,10 +736,7 @@ class Image(Ui_MainWindow):
         
         # self.Comp2Manipulate = self.components[choice]
         Comp2Manipulate = self.matrixComponents[choice]
-        
-        
-        # self.redraw()
-        
+
         return Comp2Manipulate
     
     
