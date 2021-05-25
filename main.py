@@ -337,8 +337,8 @@ class Ui_MainWindow(object):
         self.inputImages = [None,None]
         self.outputImages = [None,None]
         
-        self.firstInputImage = 0;
-        self.secondInputImage = 1;
+        self.firstInputImage = 0
+        self.secondInputImage = 1
         
         self.comp1_img1 = None
         self.comp1_img2 = None
@@ -378,13 +378,49 @@ class Ui_MainWindow(object):
         if isLoaded:
             self.inputImages[index] = currentImage
             logging.info('User opened a new Image: image%s' %index )
-            
 
+            self.addToScene(currentImage,index)
+
+    def addToScene(self,currentImage,index):
+
+        fixedDisplay = self.inputDisplays[index]
+        fixedScene = self.inputScenes[index]
+        
+        ComponentsDisplay = self.compDisplays[index]
+        ComponentsScene = self.compScenes[index]
+
+        # add the item to the graphics set
+        fixedScene.addItem(currentImage.pixmapItem)
+
+        #show which component?
+        ComponentsScene.addItem(currentImage.imagItem)
+        ComponentsScene.addItem(currentImage.realItem)
+        ComponentsScene.addItem(currentImage.phaseItem)
+        ComponentsScene.addItem(currentImage.magnitudeItem)
+        
+        
+        #set the graphics scene to our graphics view
+        fixedDisplay.setScene(fixedScene)
+        ComponentsDisplay.setScene(ComponentsScene)
 
 
     def changeComponent(self,imageIndex,choice):
         currentImage = self.inputImages[imageIndex]
-        currentImage.changeComponent(choice)
+        
+        ComponentsDisplay = self.compDisplays[imageIndex]
+        ComponentsScene = self.compScenes[imageIndex]
+
+        currentComponent = currentImage.components[choice]
+        
+        logging.info('User chosen new component updated on screen')
+
+        ComponentsScene.removeItem(currentComponent)
+        ComponentsScene.addItem(currentComponent)
+
+        #set the graphics scene to our graphics view
+        ComponentsDisplay.setScene(ComponentsScene)
+        
+
         logging.info('User changed the display component ')
     
     
@@ -392,11 +428,11 @@ class Ui_MainWindow(object):
         
         #disable irrelevant components
         self.disable()
-        
-        
+         
         #get targeted output display & scene
         currentDisplay = self.outputDisplays[displayIndex]
         currentScene = self.outputScenes[displayIndex]
+
 
         logging.debug('User chose output Display %s' %displayIndex)
 
@@ -407,44 +443,35 @@ class Ui_MainWindow(object):
         #assign 2nd image to chosen output display 
         self.outputImages[1] = self.inputImages[self.Component2.currentIndex()]
         
- 
-        # get chosen images' instances for output manipulation
-        image1 = self.outputImages[0]
-        image2 = self.outputImages[1]
-        
-        logging.info('User selected image%s for component1' %(self.Component1.currentIndex()+1))
-        logging.info('User selected image%s for component2' %(self.Component2.currentIndex()+1))
-        
-        
-        #which component for each image
-        firstImageChoice = self.component1_components.currentIndex()
-        secondImageChoice = self.component2_components.currentIndex()
-        
-        
-        
-        
-        #transfer to class for image manipulation
-        self.comp1_img1 = image1.updateOutputScene(currentDisplay,currentScene,self.component1_components.currentIndex())
-        self.comp1_img2 = image2.updateOutputScene(currentDisplay,currentScene,self.component1_components.currentIndex())
-        
-        #for 2nd combobox
-        self.comp2_img1 = image1.updateOutputScene(currentDisplay,currentScene,self.component2_components.currentIndex())
-        self.comp2_img2 = image2.updateOutputScene(currentDisplay,currentScene,self.component2_components.currentIndex())
-        
+        #show slider mixing effect
         self.updateSliderValue()
         
         
 
 
     def updateSliderValue(self):
-        image = Image()
+
+        # get chosen images' instances for output manipulation
+        image1 = self.outputImages[0]
+        image2 = self.outputImages[1]
+
+        logging.info('User selected image%s for component1' %(self.Component1.currentIndex()+1))
+        logging.info('User selected image%s for component2' %(self.Component2.currentIndex()+1))
+        
+
+        #which component for each image
+        firstImageChoice = self.component1_components.currentIndex()
+        secondImageChoice = self.component2_components.currentIndex()
+        
+
+        mixedImage = Image()
         
         if self.component1_components.currentIndex() == 0 or self.component1_components.currentIndex() == 2 or self.component1_components.currentIndex() == 4:
-            realTerm = image.sliderEffect(self.comp1_img1, self.comp1_img2,self.comp1_Slider.value())
-            ImagTerm = image.sliderEffect(self.comp2_img2,self.comp2_img1,self.comp2_Slider.value())
+            mixedImage.sliderEffect(image1,image2,firstImageChoice,self.comp1_Slider.value(),True,mixedImage)
+            mixedImage.sliderEffect(image2,image1,secondImageChoice,self.comp2_Slider.value(),False,mixedImage)
         elif self.component1_components.currentIndex() == 1 or self.component1_components.currentIndex() == 3 or self.component1_components.currentIndex() == 5:
-            ImagTerm = image.sliderEffect(self.comp1_img1, self.comp1_img2,self.comp1_Slider.value())
-            realTerm = image.sliderEffect(self.comp2_img2,self.comp2_img1,self.comp2_Slider.value())
+            mixedImage.sliderEffect(image1,image2,firstImageChoice,self.comp1_Slider.value(),False,mixedImage)
+            mixedImage.sliderEffect(image2,image1,secondImageChoice,self.comp2_Slider.value(),True,mixedImage)
             
         
         if (self.component1_components.currentIndex() == 2 or self.component1_components.currentIndex() == 3 ) and (self.component2_components.currentIndex() == 2 or self.component2_components.currentIndex() == 3):
@@ -454,7 +481,15 @@ class Ui_MainWindow(object):
             
         logging.info('User updated slider value')
 
-        self.outputImages[self.firstInputImage].redraw(realTerm,ImagTerm,isReal_Imag)
+
+        #display
+        item = image1.redraw(isReal_Imag)
+
+        currentDisplay = self.outputDisplays[self.MixerOutput.currentIndex()]
+        currentScene = self.outputScenes[self.MixerOutput.currentIndex()]
+
+        currentScene.addItem(item) 
+        currentDisplay.setScene(currentScene)
 
     def disable(self):
         if (self.component1_components.currentIndex() == 0 ) :
@@ -527,15 +562,11 @@ class Image(Ui_MainWindow):
     
     imageSizes = [None,None]
     previousImage = None
+    image_dimensions = None
     
     def __init__(self):
-        self.image_dimensions = None
         self.pixmap = None
         self.pixmapItem = None
-        self.fixedDisplay = None
-        self.fixedScene = None
-        self.ComponentsScene = None
-        self.ComponentsDisplay = None
         self.inputImageArray = None
         self.magnitude_spectrum = None
         self.magnitudeItem = None
@@ -545,10 +576,12 @@ class Image(Ui_MainWindow):
         self.realItem = None
         self.imag_component = None
         self.imagItem = None
-        self.outputDisplay = None
-        self.outputScene = None
         self.uniform_phase = None
         self.uniform_magnitude = None
+
+        self.newReal = None
+        self.newImag = None
+
         self.matrixComponents = [None,None,None,None,None,None]
         self.components = [None,None,None,None,None,None]
 
@@ -587,83 +620,20 @@ class Image(Ui_MainWindow):
             ### calculate all required components
             self.getComponents()
             
-            #get scene,view
-            self.fixedDisplay = fixedDisplay
-            self.fixedScene = fixedScene
-            self.ComponentsScene = ComponentsScene
-            self.ComponentsDisplay = ComponentsDisplay
-            
             # add to scene to be drawn
             self.addToScene(index)
-            
-            
             
             return True
             
         else: 
             return False
-                                                
-      
-    
-        
-    def addToScene(self,index):
 
-        
-        ###### how to view the image ######
-        # scroll & keep its size
-        # self.pixmap = self.pixmap.scaled(self.graphicsView.size(), Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation)
-        
-        #fit 
-        # self.pixmap = self.pixmap.scaled(self.graphicsView.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        
-        #fill
-        self.pixmap = self.pixmap.scaled(self.image_dimensions, Qt.IgnoreAspectRatio, Qt.SmoothTransformation)
 
-        # QGraphicsPixmapItem class provides a pixmap item that you can add to a QGraphicsScene.
-        self.pixmapItem = QGraphicsPixmapItem(self.pixmap)
-        
-        #magnitude
-        self.magnitude_spectrum = self.magnitude_spectrum.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
-        self.magnitudeItem = QGraphicsPixmapItem(self.magnitude_spectrum)
-        self.components[0] = self.magnitudeItem
-        
-        #phase
-        self.phase_spectrum = self.phase_spectrum.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
-        self.phaseItem = QGraphicsPixmapItem(self.phase_spectrum)
-        self.components[1] = self.phaseItem
-        
-        #real
-        self.real_component = self.real_component.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
-        self.realItem = QGraphicsPixmapItem(self.real_component)
-        self.components[2] = self.realItem
-        
-        #imaginary
-        self.imag_component = self.imag_component.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
-        self.imagItem = QGraphicsPixmapItem(self.imag_component)
-        self.components[3] = self.imagItem
-        
-        #add the item to the graphics set
-        self.fixedScene.addItem(self.pixmapItem)
-        
-        #show which component?
-        self.ComponentsScene.addItem(self.imagItem)
-        self.ComponentsScene.addItem(self.realItem)
-        self.ComponentsScene.addItem(self.phaseItem)
-        self.ComponentsScene.addItem(self.magnitudeItem)
-        
-        
-        #set the graphics scene to our graphics view
-        self.fixedDisplay.setScene(self.fixedScene)
-        self.ComponentsDisplay.setScene(self.ComponentsScene)
-        
-    
-        
     def validateSize(self,index):
         
         if (self.imageSizes[0] == self.imageSizes[1]) or (self.imageSizes[0]!= None and self.imageSizes[1] == None) or (self.imageSizes[0]== None and self.imageSizes[1] != None):
-            # self.showMessage('Alert', 'Please upload another image for comparison ')
-            return True
             logging.info('User opened an accepted image size')
+            return True
         else:
             self.imageSizes[index] = self.previousImage
             self.showMessage('Warning', 'Size mismatch, please load another image.  ')
@@ -712,44 +682,72 @@ class Image(Ui_MainWindow):
         
         #get uniform magnitude(all magnitude values are set to 1)
         self.matrixComponents[4] = np.full(shape, 1000)
-        # self.matrixComponents[4] = np.abs(dft)/np.abs(dft)
          
         # get uniform phase (all phase values are set to 0)
         self.matrixComponents[5] = np.full(shape,0)
     
-    def changeComponent(self,choice):
 
-        currentComponent = self.components[choice]
-        # currentComponent = self.ComponentsScene.items()[choice]
-        logging.info('User chosen new component updated on screen')
-        self.ComponentsScene.removeItem(currentComponent)
-        self.ComponentsScene.addItem(currentComponent)
+    def addToScene(self,index):
 
-        #set the graphics scene to our graphics view
-        self.ComponentsDisplay.setScene(self.ComponentsScene)
         
-   
+        ###### how to view the image ######
+        # scroll & keep its size
+        # self.pixmap = self.pixmap.scaled(self.image_dimensions, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation)
         
-    def updateOutputScene(self,display,scene,choice):
-        self.outputDisplay = display
-        self.outputScene = scene
+        #fit 
+        # self.pixmap = self.pixmap.scaled(self.image_dimensions, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         
-        # self.Comp2Manipulate = self.components[choice]
-        Comp2Manipulate = self.matrixComponents[choice]
+        #fill
+        self.pixmap = self.pixmap.scaled(self.image_dimensions, Qt.IgnoreAspectRatio, Qt.SmoothTransformation)
 
-        return Comp2Manipulate
-    
+        # QGraphicsPixmapItem class provides a pixmap item that you can add to a QGraphicsScene.
+        self.pixmapItem = QGraphicsPixmapItem(self.pixmap)
+        
+        #magnitude
+        self.magnitude_spectrum = self.magnitude_spectrum.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
+        self.magnitudeItem = QGraphicsPixmapItem(self.magnitude_spectrum)
+        self.components[0] = self.magnitudeItem
+        
+        #phase
+        self.phase_spectrum = self.phase_spectrum.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
+        self.phaseItem = QGraphicsPixmapItem(self.phase_spectrum)
+        self.components[1] = self.phaseItem
+        
+        #real
+        self.real_component = self.real_component.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
+        self.realItem = QGraphicsPixmapItem(self.real_component)
+        self.components[2] = self.realItem
+        
+        #imaginary
+        self.imag_component = self.imag_component.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
+        self.imagItem = QGraphicsPixmapItem(self.imag_component)
+        self.components[3] = self.imagItem
+
     
     #manipulate the image based on its slider values then redraw it
-    def sliderEffect(self,comp1,comp2,value):
-        
+    def sliderEffect(self,image1,image2,choice,value,isReal,newImage):
+
+        comp1 = image1.matrixComponents[choice]
+        comp2 = image2.matrixComponents[choice]
+
         newComp = (comp1 * value/100) + (comp2 * (100-value)/100)
 
-        return newComp
+        if isReal:
+            newImage.newReal = newComp
+            image1.newReal = newComp
+            image2.newReal = newComp
+        else:
+            newImage.newImag = newComp
+            image1.newImag = newComp
+            image2.newImag = newComp
 
 
-    def redraw(self,realTerm,ImagTerm,isReal_Imag):
+
+    def redraw(self,isReal_Imag):
         
+        realTerm = self.newReal
+        ImagTerm = self.newImag
+
         #Fourier Inverse
         if isReal_Imag:
             imageMatrix = realTerm + 1j*ImagTerm
@@ -768,9 +766,9 @@ class Image(Ui_MainWindow):
         image2Darw = QPixmap.fromImage(newImage)
         image2Darw = image2Darw.scaled(self.image_dimensions, Qt.IgnoreAspectRatio,Qt.SmoothTransformation)
         item = QGraphicsPixmapItem(image2Darw)
-        self.outputScene.addItem(item) 
-        self.outputDisplay.setScene(self.outputScene)
-        
+
+        return item
+
 
     def showMessage(self, header, message):
         """
@@ -802,4 +800,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-

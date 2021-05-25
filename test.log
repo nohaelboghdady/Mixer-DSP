@@ -1,0 +1,382 @@
+2021-05-25 10:56:16,692:User opened an accepted image size
+2021-05-25 10:56:16,750:User opened a new Image: image0
+2021-05-25 10:56:18,859:User opened an accepted image size
+2021-05-25 10:56:18,911:User opened a new Image: image1
+2021-05-25 10:56:21,546:User chose output Display 0
+2021-05-25 10:56:21,546:User selected image1 for component1
+2021-05-25 10:56:21,546:User selected image2 for component2
+2021-05-25 10:56:21,562:User updated slider value
+2021-05-25 10:56:23,768:User chose output Display 0
+2021-05-25 10:56:23,768:User selected image1 for component1
+2021-05-25 10:56:23,768:User selected image2 for component2
+2021-05-25 10:56:23,768:User updated slider value
+2021-05-25 10:56:25,296:User selected image1 for component1
+2021-05-25 10:56:25,296:User selected image2 for component2
+2021-05-25 10:56:25,311:User updated slider value
+2021-05-25 10:56:25,358:User selected image1 for component1
+2021-05-25 10:56:25,358:User selected image2 for component2
+2021-05-25 10:56:25,358:User updated slider value
+2021-05-25 10:56:25,389:User selected image1 for component1
+2021-05-25 10:56:25,389:User selected image2 for component2
+2021-05-25 10:56:25,389:User updated slider value
+2021-05-25 10:56:25,420:User selected image1 for component1
+2021-05-25 10:56:25,420:User selected image2 for component2
+2021-05-25 10:56:25,436:User updated slider value
+2021-05-25 10:56:25,467:User selected image1 for component1
+2021-05-25 10:56:25,467:User selected image2 for component2
+2021-05-25 10:56:25,467:User updated slider value
+2021-05-25 10:56:25,499:User selected image1 for component1
+2021-05-25 10:56:25,499:User selected image2 for component2
+2021-05-25 10:56:25,514:User updated slider value
+2021-05-25 10:56:28,629:User selected image1 for component1
+2021-05-25 10:56:28,629:User selected image2 for component2
+2021-05-25 10:56:28,645:User updated slider value
+2021-05-25 10:56:28,692:User selected image1 for component1
+2021-05-25 10:56:28,692:User selected image2 for component2
+2021-05-25 10:56:28,692:User updated slider value
+2021-05-25 10:56:28,723:User selected image1 for component1
+2021-05-25 10:56:28,723:User selected image2 for component2
+2021-05-25 10:56:28,723:User updated slider value
+2021-05-25 10:56:28,754:User selected image1 for component1
+2021-05-25 10:56:28,754:User selected image2 for component2
+2021-05-25 10:56:28,754:User updated slider value
+2021-05-25 10:56:28,785:User selected image1 for component1
+2021-05-25 10:56:28,785:User selected image2 for component2
+2021-05-25 10:56:28,785:User updated slider value
+2021-05-25 10:56:30,151:User selected image1 for component1
+2021-05-25 10:56:30,151:User selected image2 for component2
+2021-05-25 10:56:30,167:User updated slider value
+2021-05-25 10:56:30,215:User selected image1 for component1
+2021-05-25 10:56:30,215:User selected image2 for component2
+2021-05-25 10:56:30,223:User updated slider value
+2021-05-25 10:56:30,247:User selected image1 for component1
+2021-05-25 10:56:30,247:User selected image2 for component2
+2021-05-25 10:56:30,255:User updated slider value
+2021-05-25 10:56:30,279:User selected image1 for component1
+2021-05-25 10:56:30,279:User selected image2 for component2
+2021-05-25 10:56:30,287:User updated slider value
+2021-05-25 10:56:30,311:User selected image1 for component1
+2021-05-25 10:56:30,311:User selected image2 for component2
+2021-05-25 10:56:30,319:User updated slider value
+2021-05-25 10:56:30,351:User selected image1 for component1
+2021-05-25 10:56:30,351:User selected image2 for component2
+2021-05-25 10:56:30,351:User updated slider value
+2021-05-25 10:56:30,383:User selected image1 for component1
+2021-05-25 10:56:30,383:User selected image2 for component2
+2021-05-25 10:56:30,383:User updated slider value
+2021-05-25 10:56:30,411:User selected image1 for component1
+2021-05-25 10:56:30,411:User selected image2 for component2
+2021-05-25 10:56:30,411:User updated slider value
+2021-05-25 10:56:32,505:User chose output Display 0
+2021-05-25 10:56:32,505:User selected image1 for component1
+2021-05-25 10:56:32,505:User selected image2 for component2
+2021-05-25 10:56:32,505:User updated slider value
+2021-05-25 10:56:34,787:User selected image1 for component1
+2021-05-25 10:56:34,787:User selected image2 for component2
+2021-05-25 10:56:34,802:User updated slider value
+2021-05-25 10:56:34,833:User selected image1 for component1
+2021-05-25 10:56:34,833:User selected image2 for component2
+2021-05-25 10:56:34,849:User updated slider value
+2021-05-25 10:56:34,880:User selected image1 for component1
+2021-05-25 10:56:34,880:User selected image2 for component2
+2021-05-25 10:56:34,880:User updated slider value
+2021-05-25 10:56:34,927:User selected image1 for component1
+2021-05-25 10:56:34,927:User selected image2 for component2
+2021-05-25 10:56:34,927:User updated slider value
+2021-05-25 10:56:34,958:User selected image1 for component1
+2021-05-25 10:56:34,958:User selected image2 for component2
+2021-05-25 10:56:34,958:User updated slider value
+2021-05-25 10:56:34,990:User selected image1 for component1
+2021-05-25 10:56:34,990:User selected image2 for component2
+2021-05-25 10:56:34,990:User updated slider value
+2021-05-25 10:56:35,209:User selected image1 for component1
+2021-05-25 10:56:35,209:User selected image2 for component2
+2021-05-25 10:56:35,224:User updated slider value
+2021-05-25 10:56:35,255:User selected image1 for component1
+2021-05-25 10:56:35,255:User selected image2 for component2
+2021-05-25 10:56:35,271:User updated slider value
+2021-05-25 10:56:35,302:User selected image1 for component1
+2021-05-25 10:56:35,302:User selected image2 for component2
+2021-05-25 10:56:35,302:User updated slider value
+2021-05-25 10:56:35,333:User selected image1 for component1
+2021-05-25 10:56:35,333:User selected image2 for component2
+2021-05-25 10:56:35,333:User updated slider value
+2021-05-25 10:56:35,365:User selected image1 for component1
+2021-05-25 10:56:35,365:User selected image2 for component2
+2021-05-25 10:56:35,380:User updated slider value
+2021-05-25 10:56:35,412:User selected image1 for component1
+2021-05-25 10:56:35,412:User selected image2 for component2
+2021-05-25 10:56:35,427:User updated slider value
+2021-05-25 10:56:35,458:User selected image1 for component1
+2021-05-25 10:56:35,458:User selected image2 for component2
+2021-05-25 10:56:35,458:User updated slider value
+2021-05-25 10:56:35,490:User selected image1 for component1
+2021-05-25 10:56:35,490:User selected image2 for component2
+2021-05-25 10:56:35,490:User updated slider value
+2021-05-25 10:56:35,521:User selected image1 for component1
+2021-05-25 10:56:35,521:User selected image2 for component2
+2021-05-25 10:56:35,521:User updated slider value
+2021-05-25 10:56:35,552:User selected image1 for component1
+2021-05-25 10:56:35,552:User selected image2 for component2
+2021-05-25 10:56:35,552:User updated slider value
+2021-05-25 10:56:35,583:User selected image1 for component1
+2021-05-25 10:56:35,583:User selected image2 for component2
+2021-05-25 10:56:35,583:User updated slider value
+2021-05-25 10:56:35,615:User selected image1 for component1
+2021-05-25 10:56:35,615:User selected image2 for component2
+2021-05-25 10:56:35,630:User updated slider value
+2021-05-25 10:56:35,661:User selected image1 for component1
+2021-05-25 10:56:35,661:User selected image2 for component2
+2021-05-25 10:56:35,677:User updated slider value
+2021-05-25 10:56:36,786:User selected image1 for component1
+2021-05-25 10:56:36,786:User selected image2 for component2
+2021-05-25 10:56:36,799:User updated slider value
+2021-05-25 10:56:42,803:User chose output Display 0
+2021-05-25 10:56:42,803:User selected image1 for component1
+2021-05-25 10:56:42,803:User selected image2 for component2
+2021-05-25 10:56:42,803:User updated slider value
+2021-05-25 10:56:44,713:User chose output Display 0
+2021-05-25 10:56:44,713:User selected image1 for component1
+2021-05-25 10:56:44,713:User selected image2 for component2
+2021-05-25 10:56:44,713:User updated slider value
+2021-05-25 10:56:46,177:User selected image1 for component1
+2021-05-25 10:56:46,177:User selected image2 for component2
+2021-05-25 10:56:46,192:User updated slider value
+2021-05-25 10:56:46,224:User selected image1 for component1
+2021-05-25 10:56:46,224:User selected image2 for component2
+2021-05-25 10:56:46,239:User updated slider value
+2021-05-25 10:56:46,786:User selected image1 for component1
+2021-05-25 10:56:46,786:User selected image2 for component2
+2021-05-25 10:56:46,802:User updated slider value
+2021-05-25 10:56:46,817:User selected image1 for component1
+2021-05-25 10:56:46,817:User selected image2 for component2
+2021-05-25 10:56:46,833:User updated slider value
+2021-05-25 10:56:46,849:User selected image1 for component1
+2021-05-25 10:56:46,849:User selected image2 for component2
+2021-05-25 10:56:46,864:User updated slider value
+2021-05-25 10:56:46,880:User selected image1 for component1
+2021-05-25 10:56:46,880:User selected image2 for component2
+2021-05-25 10:56:46,880:User updated slider value
+2021-05-25 10:56:46,895:User selected image1 for component1
+2021-05-25 10:56:46,895:User selected image2 for component2
+2021-05-25 10:56:46,911:User updated slider value
+2021-05-25 10:56:46,927:User selected image1 for component1
+2021-05-25 10:56:46,927:User selected image2 for component2
+2021-05-25 10:56:46,927:User updated slider value
+2021-05-25 10:56:46,942:User selected image1 for component1
+2021-05-25 10:56:46,942:User selected image2 for component2
+2021-05-25 10:56:46,958:User updated slider value
+2021-05-25 10:56:46,973:User selected image1 for component1
+2021-05-25 10:56:46,973:User selected image2 for component2
+2021-05-25 10:56:46,973:User updated slider value
+2021-05-25 10:56:46,989:User selected image1 for component1
+2021-05-25 10:56:46,989:User selected image2 for component2
+2021-05-25 10:56:47,005:User updated slider value
+2021-05-25 10:56:47,020:User selected image1 for component1
+2021-05-25 10:56:47,020:User selected image2 for component2
+2021-05-25 10:56:47,020:User updated slider value
+2021-05-25 10:56:47,052:User selected image1 for component1
+2021-05-25 10:56:47,052:User selected image2 for component2
+2021-05-25 10:56:47,052:User updated slider value
+2021-05-25 10:56:47,067:User selected image1 for component1
+2021-05-25 10:56:47,067:User selected image2 for component2
+2021-05-25 10:56:47,083:User updated slider value
+2021-05-25 10:56:47,114:User selected image1 for component1
+2021-05-25 10:56:47,114:User selected image2 for component2
+2021-05-25 10:56:47,114:User updated slider value
+2021-05-25 10:56:48,353:User selected image1 for component1
+2021-05-25 10:56:48,353:User selected image2 for component2
+2021-05-25 10:56:48,369:User updated slider value
+2021-05-25 10:56:48,393:User selected image1 for component1
+2021-05-25 10:56:48,393:User selected image2 for component2
+2021-05-25 10:56:48,401:User updated slider value
+2021-05-25 10:56:48,425:User selected image1 for component1
+2021-05-25 10:56:48,425:User selected image2 for component2
+2021-05-25 10:56:48,441:User updated slider value
+2021-05-25 10:56:48,457:User selected image1 for component1
+2021-05-25 10:56:48,457:User selected image2 for component2
+2021-05-25 10:56:48,473:User updated slider value
+2021-05-25 10:56:48,489:User selected image1 for component1
+2021-05-25 10:56:48,489:User selected image2 for component2
+2021-05-25 10:56:48,496:User updated slider value
+2021-05-25 10:56:48,512:User selected image1 for component1
+2021-05-25 10:56:48,512:User selected image2 for component2
+2021-05-25 10:56:48,527:User updated slider value
+2021-05-25 10:56:48,558:User selected image1 for component1
+2021-05-25 10:56:48,558:User selected image2 for component2
+2021-05-25 10:56:48,574:User updated slider value
+2021-05-25 10:56:52,602:User chose output Display 0
+2021-05-25 10:56:52,602:User selected image1 for component1
+2021-05-25 10:56:52,602:User selected image2 for component2
+2021-05-25 10:56:52,602:User updated slider value
+2021-05-25 10:56:54,412:User chose output Display 0
+2021-05-25 10:56:54,412:User selected image1 for component1
+2021-05-25 10:56:54,412:User selected image2 for component2
+2021-05-25 10:56:54,427:User updated slider value
+2021-05-25 10:56:55,916:User selected image1 for component1
+2021-05-25 10:56:55,916:User selected image2 for component2
+2021-05-25 10:56:55,931:User updated slider value
+2021-05-25 10:56:55,962:User selected image1 for component1
+2021-05-25 10:56:55,962:User selected image2 for component2
+2021-05-25 10:56:55,962:User updated slider value
+2021-05-25 10:56:55,993:User selected image1 for component1
+2021-05-25 10:56:55,993:User selected image2 for component2
+2021-05-25 10:56:55,993:User updated slider value
+2021-05-25 10:56:56,025:User selected image1 for component1
+2021-05-25 10:56:56,025:User selected image2 for component2
+2021-05-25 10:56:56,025:User updated slider value
+2021-05-25 10:56:56,040:User selected image1 for component1
+2021-05-25 10:56:56,040:User selected image2 for component2
+2021-05-25 10:56:56,056:User updated slider value
+2021-05-25 10:56:56,071:User selected image1 for component1
+2021-05-25 10:56:56,071:User selected image2 for component2
+2021-05-25 10:56:56,087:User updated slider value
+2021-05-25 10:56:56,353:User selected image1 for component1
+2021-05-25 10:56:56,353:User selected image2 for component2
+2021-05-25 10:56:56,353:User updated slider value
+2021-05-25 10:56:56,400:User selected image1 for component1
+2021-05-25 10:56:56,400:User selected image2 for component2
+2021-05-25 10:56:56,400:User updated slider value
+2021-05-25 10:56:56,431:User selected image1 for component1
+2021-05-25 10:56:56,431:User selected image2 for component2
+2021-05-25 10:56:56,431:User updated slider value
+2021-05-25 10:56:56,463:User selected image1 for component1
+2021-05-25 10:56:56,463:User selected image2 for component2
+2021-05-25 10:56:56,463:User updated slider value
+2021-05-25 10:56:56,494:User selected image1 for component1
+2021-05-25 10:56:56,494:User selected image2 for component2
+2021-05-25 10:56:56,494:User updated slider value
+2021-05-25 10:56:56,509:User selected image1 for component1
+2021-05-25 10:56:56,509:User selected image2 for component2
+2021-05-25 10:56:56,525:User updated slider value
+2021-05-25 10:56:56,541:User selected image1 for component1
+2021-05-25 10:56:56,541:User selected image2 for component2
+2021-05-25 10:56:56,556:User updated slider value
+2021-05-25 10:56:56,572:User selected image1 for component1
+2021-05-25 10:56:56,572:User selected image2 for component2
+2021-05-25 10:56:56,588:User updated slider value
+2021-05-25 10:56:56,634:User selected image1 for component1
+2021-05-25 10:56:56,634:User selected image2 for component2
+2021-05-25 10:56:56,634:User updated slider value
+2021-05-25 10:56:57,922:User selected image1 for component1
+2021-05-25 10:56:57,922:User selected image2 for component2
+2021-05-25 10:56:57,938:User updated slider value
+2021-05-25 10:56:57,978:User selected image1 for component1
+2021-05-25 10:56:57,978:User selected image2 for component2
+2021-05-25 10:56:57,986:User updated slider value
+2021-05-25 10:56:58,010:User selected image1 for component1
+2021-05-25 10:56:58,010:User selected image2 for component2
+2021-05-25 10:56:58,018:User updated slider value
+2021-05-25 10:56:58,042:User selected image1 for component1
+2021-05-25 10:56:58,042:User selected image2 for component2
+2021-05-25 10:56:58,050:User updated slider value
+2021-05-25 10:56:58,074:User selected image1 for component1
+2021-05-25 10:56:58,074:User selected image2 for component2
+2021-05-25 10:56:58,082:User updated slider value
+2021-05-25 10:56:58,114:User selected image1 for component1
+2021-05-25 10:56:58,114:User selected image2 for component2
+2021-05-25 10:56:58,122:User updated slider value
+2021-05-25 10:56:58,162:User selected image1 for component1
+2021-05-25 10:56:58,162:User selected image2 for component2
+2021-05-25 10:56:58,170:User updated slider value
+2021-05-25 10:56:58,202:User selected image1 for component1
+2021-05-25 10:56:58,202:User selected image2 for component2
+2021-05-25 10:56:58,218:User updated slider value
+2021-05-25 10:56:58,478:User selected image1 for component1
+2021-05-25 10:56:58,478:User selected image2 for component2
+2021-05-25 10:56:58,494:User updated slider value
+2021-05-25 10:56:58,525:User selected image1 for component1
+2021-05-25 10:56:58,525:User selected image2 for component2
+2021-05-25 10:56:58,540:User updated slider value
+2021-05-25 10:56:58,556:User selected image1 for component1
+2021-05-25 10:56:58,556:User selected image2 for component2
+2021-05-25 10:56:58,572:User updated slider value
+2021-05-25 10:56:58,587:User selected image1 for component1
+2021-05-25 10:56:58,587:User selected image2 for component2
+2021-05-25 10:56:58,603:User updated slider value
+2021-05-25 10:56:58,619:User selected image1 for component1
+2021-05-25 10:56:58,619:User selected image2 for component2
+2021-05-25 10:56:58,634:User updated slider value
+2021-05-25 10:56:58,650:User selected image1 for component1
+2021-05-25 10:56:58,650:User selected image2 for component2
+2021-05-25 10:56:58,650:User updated slider value
+2021-05-25 10:56:58,697:User selected image1 for component1
+2021-05-25 10:56:58,697:User selected image2 for component2
+2021-05-25 10:56:58,712:User updated slider value
+2021-05-25 10:56:58,743:User selected image1 for component1
+2021-05-25 10:56:58,743:User selected image2 for component2
+2021-05-25 10:56:58,743:User updated slider value
+2021-05-25 10:56:58,775:User selected image1 for component1
+2021-05-25 10:56:58,775:User selected image2 for component2
+2021-05-25 10:56:58,790:User updated slider value
+2021-05-25 10:56:58,806:User selected image1 for component1
+2021-05-25 10:56:58,806:User selected image2 for component2
+2021-05-25 10:56:58,822:User updated slider value
+2021-05-25 10:57:56,807:User opened an accepted image size
+2021-05-25 10:57:56,855:User opened a new Image: image0
+2021-05-25 10:58:00,460:User opened an accepted image size
+2021-05-25 10:58:00,508:User opened a new Image: image1
+2021-05-25 10:58:35,072:User opened an accepted image size
+2021-05-25 10:58:35,128:User opened a new Image: image0
+2021-05-25 10:58:53,757:User opened an accepted image size
+2021-05-25 10:58:53,798:User opened a new Image: image0
+2021-05-25 10:59:27,267:User opened an accepted image size
+2021-05-25 10:59:27,318:User opened a new Image: image0
+2021-05-25 10:59:29,668:User opened an accepted image size
+2021-05-25 10:59:29,717:User opened a new Image: image1
+2021-05-25 10:59:33,493:User chose output Display 0
+2021-05-25 10:59:33,493:User selected image1 for component1
+2021-05-25 10:59:33,493:User selected image2 for component2
+2021-05-25 10:59:33,493:User updated slider value
+2021-05-25 10:59:35,044:User chose output Display 0
+2021-05-25 10:59:35,044:User selected image1 for component1
+2021-05-25 10:59:35,044:User selected image2 for component2
+2021-05-25 10:59:35,060:User updated slider value
+2021-05-25 10:59:36,142:User selected image1 for component1
+2021-05-25 10:59:36,142:User selected image2 for component2
+2021-05-25 10:59:36,157:User updated slider value
+2021-05-25 10:59:36,189:User selected image1 for component1
+2021-05-25 10:59:36,189:User selected image2 for component2
+2021-05-25 10:59:36,189:User updated slider value
+2021-05-25 10:59:36,220:User selected image1 for component1
+2021-05-25 10:59:36,220:User selected image2 for component2
+2021-05-25 10:59:36,236:User updated slider value
+2021-05-25 10:59:36,720:User selected image1 for component1
+2021-05-25 10:59:36,720:User selected image2 for component2
+2021-05-25 10:59:36,736:User updated slider value
+2021-05-25 10:59:36,783:User selected image1 for component1
+2021-05-25 10:59:36,783:User selected image2 for component2
+2021-05-25 10:59:36,783:User updated slider value
+2021-05-25 10:59:36,814:User selected image1 for component1
+2021-05-25 10:59:36,814:User selected image2 for component2
+2021-05-25 10:59:36,814:User updated slider value
+2021-05-25 10:59:36,845:User selected image1 for component1
+2021-05-25 10:59:36,845:User selected image2 for component2
+2021-05-25 10:59:36,845:User updated slider value
+2021-05-25 10:59:36,877:User selected image1 for component1
+2021-05-25 10:59:36,877:User selected image2 for component2
+2021-05-25 10:59:36,877:User updated slider value
+2021-05-25 10:59:36,923:User selected image1 for component1
+2021-05-25 10:59:36,923:User selected image2 for component2
+2021-05-25 10:59:36,923:User updated slider value
+2021-05-25 10:59:37,814:User selected image1 for component1
+2021-05-25 10:59:37,830:User selected image2 for component2
+2021-05-25 10:59:37,830:User updated slider value
+2021-05-25 10:59:37,877:User selected image1 for component1
+2021-05-25 10:59:37,877:User selected image2 for component2
+2021-05-25 10:59:37,877:User updated slider value
+2021-05-25 10:59:37,908:User selected image1 for component1
+2021-05-25 10:59:37,908:User selected image2 for component2
+2021-05-25 10:59:37,908:User updated slider value
+2021-05-25 10:59:37,939:User selected image1 for component1
+2021-05-25 10:59:37,939:User selected image2 for component2
+2021-05-25 10:59:37,939:User updated slider value
+2021-05-25 10:59:37,970:User selected image1 for component1
+2021-05-25 10:59:37,970:User selected image2 for component2
+2021-05-25 10:59:37,970:User updated slider value
+2021-05-25 10:59:38,002:User selected image1 for component1
+2021-05-25 10:59:38,002:User selected image2 for component2
+2021-05-25 10:59:38,002:User updated slider value
+2021-05-25 10:59:38,033:User selected image1 for component1
+2021-05-25 10:59:38,033:User selected image2 for component2
+2021-05-25 10:59:38,033:User updated slider value
